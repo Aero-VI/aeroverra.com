@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <clipPath id="circle-nicholas"><circle cx="100" cy="100" r="100"/></clipPath>
+    <radialGradient id="bg-nicholas" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#1a2a4a"/>
+      <stop offset="100%" stop-color="#0a1020"/>
+    </radialGradient>
+  </defs>
+  <!-- Background -->
+  <circle cx="100" cy="100" r="100" fill="url(#bg-nicholas)"/>
+  <!-- Gold ring accent -->
+  <circle cx="100" cy="100" r="97" fill="none" stroke="#c8941a" stroke-width="2" opacity="0.6"/>
+
+  <!-- Suit / shoulders -->
+  <path d="M 0 200 L 0 162 Q 30 148 58 155 L 70 170 L 100 162 L 130 170 L 142 155 Q 170 148 200 162 L 200 200 Z" fill="#152040"/>
+  <!-- Suit lapels -->
+  <path d="M 70 170 L 85 158 L 100 175 L 115 158 L 130 170 L 100 162 Z" fill="#1d2e55"/>
+  <!-- Gold tie -->
+  <path d="M 92 160 L 96 195 L 100 190 L 104 195 L 108 160 L 100 168 Z" fill="#c8941a"/>
+  <!-- White shirt -->
+  <path d="M 87 162 L 92 200 L 108 200 L 113 162 Z" fill="#e8e0d0" opacity="0.9"/>
+
+  <!-- Neck -->
+  <rect x="89" y="143" width="22" height="22" rx="5" fill="#c8926a"/>
+  <!-- Head -->
+  <ellipse cx="100" cy="116" rx="36" ry="38" fill="#d4996f"/>
+  <!-- Ears -->
+  <ellipse cx="64" cy="118" rx="7" ry="9" fill="#bf8860"/>
+  <ellipse cx="136" cy="118" rx="7" ry="9" fill="#bf8860"/>
+  <!-- Ear details -->
+  <ellipse cx="65" cy="118" rx="4" ry="6" fill="#c8926a"/>
+  <ellipse cx="135" cy="118" rx="4" ry="6" fill="#c8926a"/>
+
+  <!-- Hair - short professional cut -->
+  <path d="M 64 108 Q 64 70 100 66 Q 136 70 136 108 Q 128 84 100 82 Q 72 84 64 108 Z" fill="#1e120a"/>
+  <!-- Hair side cuts -->
+  <path d="M 64 108 Q 68 95 75 92 L 75 105 Z" fill="#1e120a"/>
+  <path d="M 136 108 Q 132 95 125 92 L 125 105 Z" fill="#1e120a"/>
+
+  <!-- Eyebrows - strong -->
+  <path d="M 81 104 Q 88 101 95 103" stroke="#1e120a" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M 105 103 Q 112 101 119 104" stroke="#1e120a" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- Eyes -->
+  <ellipse cx="88" cy="114" rx="6" ry="6.5" fill="#fff"/>
+  <ellipse cx="112" cy="114" rx="6" ry="6.5" fill="#fff"/>
+  <circle cx="89" cy="114" r="4" fill="#1a0f00"/>
+  <circle cx="113" cy="114" r="4" fill="#1a0f00"/>
+  <circle cx="90" cy="112" r="1.5" fill="rgba(255,255,255,0.7)"/>
+  <circle cx="114" cy="112" r="1.5" fill="rgba(255,255,255,0.7)"/>
+
+  <!-- Nose -->
+  <path d="M 100 120 Q 97 128 95 130 Q 100 133 105 130 Q 103 128 100 120" fill="#b07850" opacity="0.8"/>
+
+  <!-- Mouth - confident smile -->
+  <path d="M 90 140 Q 100 147 110 140" stroke="#8a4525" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M 90 140 Q 100 143 110 140" stroke="#e8a090" stroke-width="1" fill="none" opacity="0.5"/>
+
+  <!-- Gold pin on lapel -->
+  <circle cx="87" cy="162" r="4" fill="#c8941a"/>
+  <circle cx="87" cy="162" r="2" fill="#f0b830"/>
+</svg>

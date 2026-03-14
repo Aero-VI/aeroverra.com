@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <clipPath id="circle-azula"><circle cx="100" cy="100" r="100"/></clipPath>
+    <radialGradient id="bg-azula" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#0d1a2e"/>
+      <stop offset="100%" stop-color="#030810"/>
+    </radialGradient>
+    <radialGradient id="fire-azula" cx="50%" cy="80%" r="60%">
+      <stop offset="0%" stop-color="#00aaff" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#0044aa" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow-azula">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+  <!-- Background -->
+  <circle cx="100" cy="100" r="100" fill="url(#bg-azula)"/>
+  <!-- Fire glow at bottom -->
+  <ellipse cx="100" cy="185" rx="80" ry="50" fill="url(#fire-azula)"/>
+  <!-- Blue flame particles -->
+  <path d="M 72 190 Q 78 165 82 170 Q 86 148 90 158" stroke="#00aaff" stroke-width="1.5" fill="none" opacity="0.5"/>
+  <path d="M 88 192 Q 92 160 96 168 Q 100 145 104 160" stroke="#40c8ff" stroke-width="1.5" fill="none" opacity="0.7"/>
+  <path d="M 110 190 Q 116 165 120 172 Q 124 150 128 162" stroke="#00aaff" stroke-width="1.5" fill="none" opacity="0.5"/>
+
+  <!-- Dark outfit / collar -->
+  <path d="M 0 200 L 0 158 Q 35 145 62 155 L 75 172 L 100 164 L 125 172 L 138 155 Q 165 145 200 158 L 200 200 Z" fill="#060d18"/>
+  <!-- Armor-like shoulder pieces -->
+  <path d="M 0 168 Q 15 150 40 152 Q 55 150 62 155 L 58 168 Z" fill="#0a1830"/>
+  <path d="M 200 168 Q 185 150 160 152 Q 145 150 138 155 L 142 168 Z" fill="#0a1830"/>
+  <!-- Blue trim -->
+  <path d="M 75 172 L 82 160 L 100 168 L 118 160 L 125 172 L 100 164 Z" fill="#0a2040"/>
+  <path d="M 82 160 L 100 174 L 118 160" stroke="#00aaff" stroke-width="1" fill="none" opacity="0.8"/>
+
+  <!-- Neck -->
+  <rect x="90" y="145" width="20" height="20" rx="3" fill="#d4b8a0"/>
+  <!-- Head - slightly angular/sharp -->
+  <ellipse cx="100" cy="115" rx="34" ry="36" fill="#ddc4a8"/>
+  <!-- Angular jaw lines -->
+  <path d="M 66 118 Q 68 135 82 144 Q 100 150 118 144 Q 132 135 134 118" fill="#d4b8a0" opacity="0.5"/>
+
+  <!-- Ears -->
+  <ellipse cx="66" cy="117" rx="6" ry="8" fill="#c8a888"/>
+  <ellipse cx="134" cy="117" rx="6" ry="8" fill="#c8a888"/>
+
+  <!-- Hair - sleek, dark with blue shimmer, pulled back tight -->
+  <path d="M 66 106 Q 66 68 100 64 Q 134 68 134 106 Q 126 80 100 78 Q 74 80 66 106 Z" fill="#080f1a"/>
+  <!-- Hair top knot / updo suggestion -->
+  <ellipse cx="100" cy="64" rx="16" ry="8" fill="#080f1a"/>
+  <path d="M 84 64 Q 100 56 116 64 Q 100 60 84 64 Z" fill="#0d1525"/>
+  <!-- Blue sheen in hair -->
+  <path d="M 74 84 Q 78 76 86 74" stroke="#0055aa" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M 114 74 Q 122 76 126 84" stroke="#0055aa" stroke-width="2" fill="none" opacity="0.6"/>
+
+  <!-- Sharp eyebrows - arched severely -->
+  <path d="M 80 103 Q 88 98 96 102" stroke="#080f1a" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M 104 102 Q 112 98 120 103" stroke="#080f1a" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- Eyes - sharp, intense gold/amber -->
+  <ellipse cx="88" cy="113" rx="6" ry="6" fill="#fff"/>
+  <ellipse cx="112" cy="113" rx="6" ry="6" fill="#fff"/>
+  <ellipse cx="88" cy="113" rx="4.5" ry="4.5" fill="#c8780a"/>
+  <ellipse cx="112" cy="113" rx="4.5" ry="4.5" fill="#c8780a"/>
+  <circle cx="88" cy="113" r="3" fill="#1a0800"/>
+  <circle cx="112" cy="113" r="3" fill="#1a0800"/>
+  <circle cx="89.5" cy="111.5" r="1.2" fill="rgba(255,255,255,0.8)"/>
+  <circle cx="113.5" cy="111.5" r="1.2" fill="rgba(255,255,255,0.8)"/>
+
+  <!-- Nose -->
+  <path d="M 100 118 Q 97 126 95 128 Q 100 131 105 128 Q 103 126 100 118" fill="#c09870" opacity="0.7"/>
+
+  <!-- Mouth - slight smirk -->
+  <path d="M 91 138 Q 98 141 108 137" stroke="#8a4020" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- Upper lip line -->
+  <path d="M 94 136 Q 100 138 106 136" stroke="#c07050" stroke-width="1" fill="none" opacity="0.6"/>
+
+  <!-- Blue flame crown emblem -->
+  <path d="M 100 18 L 97 28 L 93 22 L 96 32 L 92 28 L 96 40 L 100 36 L 104 40 L 108 28 L 104 32 L 107 22 L 103 28 Z" fill="#00aaff" opacity="0.9" filter="url(#glow-azula)"/>
+  <!-- Glow ring -->
+  <circle cx="100" cy="100" r="97" fill="none" stroke="#00aaff" stroke-width="1.5" opacity="0.3"/>
+</svg>

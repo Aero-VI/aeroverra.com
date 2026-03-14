@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <radialGradient id="bg-sage" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#0e1a0e"/>
+      <stop offset="100%" stop-color="#050a05"/>
+    </radialGradient>
+  </defs>
+  <!-- Background -->
+  <circle cx="100" cy="100" r="100" fill="url(#bg-sage)"/>
+  <!-- Book/page lines (documentation vibe) -->
+  <line x1="18" y1="28" x2="42" y2="28" stroke="#7bc47b" stroke-width="0.8" opacity="0.2"/>
+  <line x1="18" y1="34" x2="38" y2="34" stroke="#7bc47b" stroke-width="0.8" opacity="0.18"/>
+  <line x1="18" y1="40" x2="40" y2="40" stroke="#7bc47b" stroke-width="0.8" opacity="0.15"/>
+  <line x1="18" y1="46" x2="36" y2="46" stroke="#7bc47b" stroke-width="0.8" opacity="0.12"/>
+  <!-- Open book icon top-right -->
+  <path d="M 160 15 Q 170 12 180 15 L 180 35 Q 170 32 160 35 Z" fill="none" stroke="#7bc47b" stroke-width="1.2" opacity="0.35"/>
+  <path d="M 180 15 Q 190 12 180 15 L 180 35 Q 190 32 180 35 Z" fill="none" stroke="#7bc47b" stroke-width="1.2" opacity="0.35"/>
+  <line x1="180" y1="15" x2="180" y2="35" stroke="#7bc47b" stroke-width="1" opacity="0.35"/>
+  <!-- Book lines -->
+  <line x1="163" y1="21" x2="177" y2="21" stroke="#7bc47b" stroke-width="0.7" opacity="0.3"/>
+  <line x1="163" y1="26" x2="177" y2="26" stroke="#7bc47b" stroke-width="0.7" opacity="0.25"/>
+  <line x1="163" y1="31" x2="177" y2="31" stroke="#7bc47b" stroke-width="0.7" opacity="0.2"/>
+
+  <!-- Casual but academic look - cardigan/sweater -->
+  <path d="M 0 200 L 0 150 Q 28 134 56 147 L 74 167 L 100 161 L 126 167 L 144 147 Q 172 134 200 150 L 200 200 Z" fill="#0d1a0d"/>
+  <!-- Sweater V-neck -->
+  <path d="M 76 167 L 86 150 L 100 162 L 114 150 L 124 167 L 100 160 Z" fill="#122012"/>
+  <path d="M 86 150 L 100 164 L 114 150" stroke="#7bc47b" stroke-width="1.5" fill="none" opacity="0.5"/>
+  <!-- Collar/shirt underneath -->
+  <path d="M 88 153 L 94 152 L 100 154 L 106 152 L 112 153" stroke="#d4cfc8" stroke-width="2" fill="none" opacity="0.6"/>
+
+  <!-- Neck -->
+  <rect x="90" y="143" width="20" height="22" rx="4" fill="#c8996a"/>
+  <!-- Head -->
+  <ellipse cx="100" cy="114" rx="34" ry="37" fill="#d4a878"/>
+  <!-- Ears -->
+  <ellipse cx="66" cy="116" rx="6.5" ry="9" fill="#c49060"/>
+  <ellipse cx="134" cy="116" rx="6.5" ry="9" fill="#c49060"/>
+  <ellipse cx="66" cy="116" rx="4" ry="6" fill="#d4a878"/>
+  <ellipse cx="134" cy="116" rx="4" ry="6" fill="#d4a878"/>
+
+  <!-- Hair - medium brown, slightly wavy, relaxed -->
+  <path d="M 66 106 Q 66 66 100 62 Q 134 66 134 106 Q 126 78 100 76 Q 74 78 66 106 Z" fill="#4a2e14"/>
+  <!-- Wavy hair texture -->
+  <path d="M 68 100 Q 72 92 76 96 Q 80 88 84 92" stroke="#5a3820" stroke-width="2" fill="none" opacity="0.5"/>
+  <path d="M 116 92 Q 120 88 124 96 Q 128 92 132 100" stroke="#5a3820" stroke-width="2" fill="none" opacity="0.5"/>
+  <!-- Slight side hair -->
+  <path d="M 66 106 Q 62 118 64 135" stroke="#4a2e14" stroke-width="4" fill="none"/>
+  <path d="M 134 106 Q 138 118 136 135" stroke="#4a2e14" stroke-width="4" fill="none"/>
+
+  <!-- GLASSES - defining feature for Sage -->
+  <!-- Left lens frame -->
+  <rect x="74" y="107" width="24" height="17" rx="4" fill="none" stroke="#5a4030" stroke-width="2.5"/>
+  <!-- Right lens frame -->
+  <rect x="102" y="107" width="24" height="17" rx="4" fill="none" stroke="#5a4030" stroke-width="2.5"/>
+  <!-- Bridge -->
+  <line x1="98" y1="115" x2="102" y2="115" stroke="#5a4030" stroke-width="2.5"/>
+  <!-- Temples -->
+  <line x1="74" y1="115" x2="66" y2="117" stroke="#5a4030" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="126" y1="115" x2="134" y2="117" stroke="#5a4030" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Lens tint -->
+  <rect x="75" y="108" width="22" height="15" rx="3.5" fill="#7bc47b" opacity="0.07"/>
+  <rect x="103" y="108" width="22" height="15" rx="3.5" fill="#7bc47b" opacity="0.07"/>
+
+  <!-- Eyebrows above glasses -->
+  <path d="M 77 104 Q 85 101 95 103" stroke="#4a2e14" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M 105 103 Q 115 101 123 104" stroke="#4a2e14" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Eyes through glasses -->
+  <circle cx="86" cy="116" r="4.5" fill="#5a3820"/>
+  <circle cx="114" cy="116" r="4.5" fill="#5a3820"/>
+  <circle cx="86" cy="116" r="3" fill="#1a0c04"/>
+  <circle cx="114" cy="116" r="3" fill="#1a0c04"/>
+  <circle cx="87.5" cy="114.5" r="1.2" fill="rgba(255,255,255,0.8)"/>
+  <circle cx="115.5" cy="114.5" r="1.2" fill="rgba(255,255,255,0.8)"/>
+
+  <!-- Nose -->
+  <path d="M 100 124 Q 97 130 95 132 Q 100 134 105 132 Q 103 130 100 124" fill="#a07848" opacity="0.7"/>
+
+  <!-- Mouth - warm, slight knowing smile -->
+  <path d="M 90 139 Q 100 146 110 139" stroke="#7a4020" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M 93 137 Q 100 140 107 137" stroke="#d08060" stroke-width="1.5" fill="none" opacity="0.5"/>
+
+  <!-- Sage green glow ring -->
+  <circle cx="100" cy="100" r="97" fill="none" stroke="#7bc47b" stroke-width="2" opacity="0.4"/>
+</svg>

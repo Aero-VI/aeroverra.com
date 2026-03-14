@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <radialGradient id="bg-zara" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#1e0a35"/>
+      <stop offset="100%" stop-color="#0a0518"/>
+    </radialGradient>
+    <linearGradient id="hair-zara" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#200c40"/>
+      <stop offset="100%" stop-color="#3a1060"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <circle cx="100" cy="100" r="100" fill="url(#bg-zara)"/>
+  <!-- Purple geometric accent lines -->
+  <line x1="100" y1="0" x2="100" y2="200" stroke="#6030a0" stroke-width="0.5" opacity="0.2"/>
+  <line x1="0" y1="100" x2="200" y2="100" stroke="#6030a0" stroke-width="0.5" opacity="0.2"/>
+  <circle cx="100" cy="100" r="80" fill="none" stroke="#6030a0" stroke-width="0.5" opacity="0.2"/>
+  <circle cx="100" cy="100" r="60" fill="none" stroke="#6030a0" stroke-width="0.5" opacity="0.15"/>
+
+  <!-- Outfit/shoulders - professional blouse -->
+  <path d="M 0 200 L 0 155 Q 30 140 58 150 L 74 168 L 100 162 L 126 168 L 142 150 Q 170 140 200 155 L 200 200 Z" fill="#18082a"/>
+  <!-- Collar detail -->
+  <path d="M 80 162 L 88 152 L 100 162 L 112 152 L 120 162 L 100 158 Z" fill="#280c45"/>
+  <!-- Purple accent trim -->
+  <path d="M 88 152 L 100 164 L 112 152" stroke="#8040c0" stroke-width="1.5" fill="none" opacity="0.8"/>
+
+  <!-- Neck -->
+  <rect x="89" y="143" width="22" height="22" rx="4" fill="#c89078"/>
+  <!-- Head -->
+  <ellipse cx="100" cy="115" rx="35" ry="38" fill="#d49880"/>
+  <!-- Ears -->
+  <ellipse cx="65" cy="117" rx="6.5" ry="9" fill="#c08870"/>
+  <ellipse cx="135" cy="117" rx="6.5" ry="9" fill="#c08870"/>
+  <ellipse cx="65" cy="117" rx="4" ry="6" fill="#c89078"/>
+  <ellipse cx="135" cy="117" rx="4" ry="6" fill="#c89078"/>
+  <!-- Purple earring dots -->
+  <circle cx="64" cy="122" r="3" fill="#9040c8"/>
+  <circle cx="136" cy="122" r="3" fill="#9040c8"/>
+
+  <!-- Hair - flowing medium length, dark with purple highlights -->
+  <path d="M 65 105 Q 65 65 100 61 Q 135 65 135 105 Q 128 76 100 74 Q 72 76 65 105 Z" fill="#200c40"/>
+  <!-- Side hair flows down to shoulders -->
+  <path d="M 65 105 Q 58 125 62 155 Q 68 148 68 138 Q 68 120 72 112 Z" fill="#200c40"/>
+  <path d="M 135 105 Q 142 125 138 155 Q 132 148 132 138 Q 132 120 128 112 Z" fill="#200c40"/>
+  <!-- Hair highlights purple -->
+  <path d="M 96 62 Q 100 68 102 76" stroke="#7830c0" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M 106 64 Q 112 72 114 82" stroke="#6020a8" stroke-width="1.5" fill="none" opacity="0.5"/>
+
+  <!-- Eyebrows - arched, defined -->
+  <path d="M 80 103 Q 88 99 96 101" stroke="#200c40" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M 104 101 Q 112 99 120 103" stroke="#200c40" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- Eyes - warm brown with violet tint -->
+  <ellipse cx="88" cy="113" rx="6.5" ry="6.5" fill="#fff"/>
+  <ellipse cx="112" cy="113" rx="6.5" ry="6.5" fill="#fff"/>
+  <circle cx="88" cy="113" r="5" fill="#7030a0"/>
+  <circle cx="112" cy="113" r="5" fill="#7030a0"/>
+  <circle cx="88" cy="113" r="3" fill="#200818"/>
+  <circle cx="112" cy="113" r="3" fill="#200818"/>
+  <!-- Lashes suggestion -->
+  <ellipse cx="88" cy="106.5" rx="6.5" ry="2" fill="#200c40" opacity="0.7"/>
+  <ellipse cx="112" cy="106.5" rx="6.5" ry="2" fill="#200c40" opacity="0.7"/>
+  <circle cx="89.5" cy="111.5" r="1.5" fill="rgba(255,255,255,0.9)"/>
+  <circle cx="113.5" cy="111.5" r="1.5" fill="rgba(255,255,255,0.9)"/>
+
+  <!-- Nose -->
+  <path d="M 100 118 Q 97 126 95 128 Q 100 131 105 128 Q 103 126 100 118" fill="#a07058" opacity="0.7"/>
+
+  <!-- Mouth - thoughtful, slight curve -->
+  <path d="M 91 138 Q 100 144 109 138" stroke="#7a3530" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M 94 136 Q 100 138 106 136" stroke="#d08090" stroke-width="1.5" fill="none" opacity="0.7"/>
+
+  <!-- Purple glow ring -->
+  <circle cx="100" cy="100" r="97" fill="none" stroke="#8040c0" stroke-width="2" opacity="0.5"/>
+  <!-- Corner product icon - tiny roadmap arrow -->
+  <path d="M 170 30 L 178 38 L 170 46" stroke="#8040c0" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.7"/>
+  <line x1="162" y1="38" x2="178" y2="38" stroke="#8040c0" stroke-width="2" opacity="0.7"/>
+</svg>
