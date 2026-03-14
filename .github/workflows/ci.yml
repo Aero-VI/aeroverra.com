@@ -1,0 +1,77 @@
+name: Validate
+
+on:
+  pull_request:
+    branches:
+      - dev
+      - main
+
+jobs:
+  validate:
+    name: validate
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install htmlhint
+        run: npm install -g htmlhint
+
+      - name: Run HTML validation
+        run: |
+          echo "Running HTML validation with htmlhint..."
+          HTML_FILES=$(find . -name "*.html" -not -path "./.git/*" -not -path "./node_modules/*")
+          if [ -z "$HTML_FILES" ]; then
+            echo "No HTML files found."
+          else
+            echo "$HTML_FILES" | xargs htmlhint --config .htmlhintrc 2>/dev/null || \
+            echo "$HTML_FILES" | xargs htmlhint
+          fi
+
+      - name: Check for exposed secrets
+        run: |
+          echo "Scanning for potential exposed secrets..."
+          FAILED=0
+
+          # Check for GitHub tokens
+          if grep -rn --include="*.html" --include="*.js" --include="*.css" --include="*.json" --include="*.yml" --include="*.yaml" --include="*.md" \
+            -E 'ghp_[A-Za-z0-9]{36}' \
+            --exclude-dir=.git \
+            --exclude-dir=node_modules \
+            .; then
+            echo "::error::Potential GitHub token found!"
+            FAILED=1
+          fi
+
+          # Check for private key markers
+          if grep -rn --include="*.html" --include="*.js" --include="*.json" --include="*.pem" --include="*.key" \
+            -E '-----BEGIN (RSA |EC |DSA |OPENSSH )?PRIVATE KEY-----' \
+            --exclude-dir=.git \
+            --exclude-dir=node_modules \
+            .; then
+            echo "::error::Private key found in repository!"
+            FAILED=1
+          fi
+
+          # Check for password= patterns (common hardcoded creds)
+          if grep -rn --include="*.html" --include="*.js" --include="*.json" --include="*.yml" --include="*.yaml" \
+            -E 'password\s*=\s*["\x27][^"\x27]{4,}["\x27]' \
+            --exclude-dir=.git \
+            --exclude-dir=node_modules \
+            .; then
+            echo "::error::Hardcoded password pattern detected!"
+            FAILED=1
+          fi
+
+          if [ $FAILED -eq 0 ]; then
+            echo "No exposed secrets detected."
+          else
+            echo "Secret scan failed — review flagged lines above."
+            exit 1
+          fi
