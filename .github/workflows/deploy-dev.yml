@@ -14,27 +14,22 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Write SSH key
+      - name: Set up SSH
         run: |
-          echo "${{ secrets.DEV_SSH_KEY }}" > /tmp/deploy_key
-          chmod 600 /tmp/deploy_key
+          mkdir -p ~/.ssh
+          echo "${{ secrets.DEV_SSH_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+
+      - name: Add known_hosts entry
+        run: |
+          ssh-keyscan -H ${{ secrets.DEV_HOST }} >> ~/.ssh/known_hosts
 
       - name: Sync files via rsync
         run: |
           rsync -avz --delete \
             --exclude='.git' \
-            --exclude='.github' \
-            -e "ssh -i /tmp/deploy_key -o StrictHostKeyChecking=no" \
             ./ ${{ secrets.DEV_USER }}@${{ secrets.DEV_HOST }}:/var/www/html/
 
       - name: Reload nginx
-        uses: appleboy/ssh-action@v1
-        with:
-          host: ${{ secrets.DEV_HOST }}
-          username: ${{ secrets.DEV_USER }}
-          key: ${{ secrets.DEV_SSH_KEY }}
-          script: sudo systemctl reload nginx
-
-      - name: Cleanup SSH key
-        if: always()
-        run: rm -f /tmp/deploy_key
+        run: |
+          ssh ${{ secrets.DEV_USER }}@${{ secrets.DEV_HOST }} "sudo systemctl reload nginx"

@@ -1,14 +1,16 @@
-name: Validate
+name: CI
 
 on:
-  pull_request:
+  push:
     branches:
       - dev
+  pull_request:
+    branches:
       - main
 
 jobs:
   validate:
-    name: validate
+    name: Validate
     runs-on: ubuntu-latest
 
     steps:
@@ -32,6 +34,34 @@ jobs:
           else
             echo "$HTML_FILES" | xargs htmlhint --config .htmlhintrc 2>/dev/null || \
             echo "$HTML_FILES" | xargs htmlhint
+          fi
+
+      - name: Check file structure
+        run: |
+          echo "Checking required file structure..."
+          FAILED=0
+
+          # index.html must exist
+          if [ ! -f "index.html" ]; then
+            echo "::error::index.html is missing from repository root!"
+            FAILED=1
+          else
+            echo "✅ index.html present"
+          fi
+
+          # .github/workflows must exist (sanity check)
+          if [ ! -d ".github/workflows" ]; then
+            echo "::error::.github/workflows directory is missing!"
+            FAILED=1
+          else
+            echo "✅ .github/workflows directory present"
+          fi
+
+          if [ $FAILED -eq 0 ]; then
+            echo "File structure check passed."
+          else
+            echo "File structure check failed — see errors above."
+            exit 1
           fi
 
       - name: Check for exposed secrets
@@ -66,6 +96,16 @@ jobs:
             --exclude-dir=node_modules \
             .; then
             echo "::error::Hardcoded password pattern detected!"
+            FAILED=1
+          fi
+
+          # Check for AWS access keys
+          if grep -rn --include="*.html" --include="*.js" --include="*.json" --include="*.yml" --include="*.env" \
+            -E '(AKIA|AGPA|AIPA|ANPA|ANVA|ASIA)[A-Z0-9]{16}' \
+            --exclude-dir=.git \
+            --exclude-dir=node_modules \
+            .; then
+            echo "::error::Potential AWS access key found!"
             FAILED=1
           fi
 
