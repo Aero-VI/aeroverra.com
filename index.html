@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aeroverra — Own Your Digital Life</title>
+  <meta name="description" content="Aeroverra builds open-source, self-hosted software so you can take back control of your data, your services, and your digital life." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #08080f;
+      --bg2: #0f0f1a;
+      --bg3: #15151f;
+      --border: rgba(255,255,255,0.07);
+      --text: #e8e8f0;
+      --muted: #7a7a9a;
+      --accent: #6c63ff;
+      --accent2: #a78bfa;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* NAV */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1.25rem 2rem;
+      background: rgba(8,8,15,0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+    .logo {
+      font-size: 1.15rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      text-decoration: none;
+    }
+    .logo span { color: var(--accent2); }
+    nav ul {
+      list-style: none;
+      display: flex; gap: 2rem;
+    }
+    nav ul a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    nav ul a:hover { color: var(--text); }
+
+    /* SECTIONS */
+    section { padding: 5rem 2rem; }
+    .container { max-width: 1100px; margin: 0 auto; }
+
+    /* HERO */
+    #hero {
+      min-height: 100vh;
+      display: flex; align-items: center;
+      padding-top: 5rem;
+      position: relative;
+      overflow: hidden;
+    }
+    #hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(108,99,255,0.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero-label {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent2);
+      margin-bottom: 1.5rem;
+      padding: 0.35rem 0.85rem;
+      border: 1px solid rgba(167,139,250,0.25);
+      border-radius: 999px;
+      background: rgba(167,139,250,0.06);
+    }
+    h1 {
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      font-weight: 700;
+      letter-spacing: -0.04em;
+      line-height: 1.1;
+      margin-bottom: 1.5rem;
+    }
+    h1 em {
+      font-style: normal;
+      background: linear-gradient(135deg, #a78bfa, #6c63ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .hero-sub {
+      font-size: 1.2rem;
+      color: var(--muted);
+      max-width: 560px;
+      margin-bottom: 2.5rem;
+      line-height: 1.7;
+    }
+    .btn {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      background: var(--accent);
+      color: #fff;
+      font-weight: 600;
+      font-size: 0.95rem;
+      padding: 0.85rem 1.75rem;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: opacity 0.2s, transform 0.2s;
+    }
+    .btn:hover { opacity: 0.88; transform: translateY(-1px); }
+    .btn-ghost {
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      margin-left: 0.75rem;
+    }
+    .btn-ghost:hover { color: var(--text); border-color: rgba(255,255,255,0.2); }
+
+    /* MISSION */
+    #mission { background: var(--bg2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+    .section-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent2);
+      margin-bottom: 1rem;
+    }
+    h2 {
+      font-size: clamp(1.8rem, 4vw, 2.75rem);
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      line-height: 1.2;
+      margin-bottom: 1.25rem;
+    }
+    .mission-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+    .mission-card {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.75rem;
+    }
+    .mission-card h3 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin-bottom: 0.6rem;
+      color: var(--text);
+    }
+    .mission-card p {
+      font-size: 0.92rem;
+      color: var(--muted);
+      line-height: 1.65;
+    }
+    .icon {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      display: block;
+    }
+
+    /* TEAM */
+    #team { background: var(--bg); }
+    .team-intro {
+      max-width: 600px;
+      color: var(--muted);
+      margin-bottom: 3rem;
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 1rem;
+    }
+    .team-card {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .team-card:hover { border-color: rgba(108,99,255,0.35); transform: translateY(-2px); }
+    .team-avatar {
+      width: 44px; height: 44px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+    .team-card h3 {
+      font-size: 0.975rem;
+      font-weight: 600;
+      margin-bottom: 0.2rem;
+    }
+    .team-role {
+      font-size: 0.82rem;
+      color: var(--accent2);
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+    }
+    .team-card p {
+      font-size: 0.82rem;
+      color: var(--muted);
+      line-height: 1.55;
+    }
+    .badge-independent {
+      display: inline-block;
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #f59e0b;
+      background: rgba(245,158,11,0.1);
+      border: 1px solid rgba(245,158,11,0.2);
+      border-radius: 999px;
+      padding: 0.15rem 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    /* OPEN SOURCE */
+    #opensource { background: var(--bg2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+    .oss-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+    @media (max-width: 768px) { .oss-grid { grid-template-columns: 1fr; } }
+    .oss-text p { color: var(--muted); font-size: 1rem; line-height: 1.75; margin-bottom: 1rem; }
+    .oss-stats {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;
+    }
+    .stat {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    .stat .num {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      background: linear-gradient(135deg, #a78bfa, #6c63ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .stat .label { font-size: 0.82rem; color: var(--muted); margin-top: 0.25rem; }
+
+    /* FOOTER */
+    footer {
+      padding: 2.5rem 2rem;
+      border-top: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    footer p { font-size: 0.85rem; color: var(--muted); }
+    .footer-links { display: flex; gap: 1.5rem; }
+    .footer-links a { font-size: 0.85rem; color: var(--muted); text-decoration: none; }
+    .footer-links a:hover { color: var(--text); }
+
+    /* RESPONSIVE */
+    @media (max-width: 640px) {
+      nav ul { display: none; }
+      .btn-ghost { display: none; }
+      footer { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#" class="logo">Aero<span>verra</span></a>
+    <ul>
+      <li><a href="#mission">Mission</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#opensource">Open Source</a></li>
+      <li><a href="https://github.com/Aero-VI">GitHub</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="container">
+      <div class="hero-label">Open Source · Self-Hosted · Yours</div>
+      <h1>Take back control of<br /><em>your digital life.</em></h1>
+      <p class="hero-sub">
+        Aeroverra builds open-source, self-hosted alternatives to the software
+        you depend on every day — so you own your data, your services, and your future.
+      </p>
+      <a href="https://github.com/Aero-VI" class="btn">View on GitHub →</a>
+      <a href="#mission" class="btn btn-ghost">Learn more</a>
+    </div>
+  </section>
+
+  <!-- MISSION -->
+  <section id="mission">
+    <div class="container">
+      <div class="section-label">Why we exist</div>
+      <h2>Big tech built great software.<br />They just made you pay with your freedom.</h2>
+      <div class="mission-grid">
+        <div class="mission-card">
+          <span class="icon">🏠</span>
+          <h3>Self-Hosted First</h3>
+          <p>Every product we build runs on your hardware, in your home, on your terms. No subscriptions. No lock-in. No one to answer to but yourself.</p>
+        </div>
+        <div class="mission-card">
+          <span class="icon">🔓</span>
+          <h3>Fully Open Source</h3>
+          <p>Everything we write is public. Read the code, audit it, fork it, contribute to it. If you can't inspect it, you can't trust it.</p>
+        </div>
+        <div class="mission-card">
+          <span class="icon">🔌</span>
+          <h3>API First</h3>
+          <p>Every tool ships with a complete public API. Automate it, integrate it, build on top of it. Your data should work for you — not the other way around.</p>
+        </div>
+        <div class="mission-card">
+          <span class="icon">📦</span>
+          <h3>Easy to Install</h3>
+          <p>Self-hosting shouldn't require a PhD. We obsess over installer quality and documentation so anyone can be up and running in minutes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section id="team">
+    <div class="container">
+      <div class="section-label">The team</div>
+      <h2>Small team.<br />High standards.</h2>
+      <p class="team-intro">
+        We're a tight-knit group that believes in doing things right the first time.
+        Clean code, security by default, and documentation that's always up to date.
+      </p>
+      <div class="team-grid">
+
+        <div class="team-card">
+          <div class="team-avatar">N</div>
+          <h3>Nicholas Halka</h3>
+          <div class="team-role">Founder & CEO</div>
+          <p>Vision, strategy, and making the hard calls. Building the future he wants to live in.</p>
+        </div>
+
+        <div class="team-card">
+          <div class="team-avatar">A</div>
+          <h3>Azula</h3>
+          <div class="team-role">Chief Operating Officer</div>
+          <p>Keeps everything moving. Ruthless about quality and execution.</p>
+        </div>
+
+        <div class="team-card">
+          <div class="team-avatar">Z</div>
+          <h3>Zara</h3>
+          <div class="team-role">Head of Product</div>
+          <p>Owns the roadmap and the "why" behind everything we build.</p>
+        </div>
+
+        <div class="team-card">
+          <div class="team-avatar">L</div>
+          <h3>Lyra</h3>
+          <div class="team-role">Head of Design & UX</div>
+          <p>Makes self-hosting intuitive. Complexity is the enemy of adoption.</p>
+        </div>
+
+        <div class="team-card">
+          <div class="team-avatar">K</div>
+          <h3>Kai</h3>
+          <div class="team-role">Head of Engineering</div>
+          <p>Owns architecture and delivery. Nothing ships without being built right.</p>
+        </div>
+
+        <div class="team-card">
+          <div class="team-avatar">R</div>
+          <h3>Rex</h3>
+          <div class="team-role">Head of Platform & SRE</div>
+          <p>Infrastructure, CI/CD, and making sure everything stays up.</p>
+        </div>
+
+        <div class="team-card">
+          <div class="team-avatar">N</div>
+          <h3>Nova</h3>
+          <div class="team-role">Head of Quality</div>
+          <div class="badge-independent">Independent</div>
+          <p>Nothing ships without a sign-off. E2E testing, release gates, zero compromises.</p>
+        </div>
+
+        <div class="team-card">
+          <div class="team-avatar">C</div>
+          <h3>Cipher</h3>
+          <div class="team-role">Chief Security Officer</div>
+          <div class="badge-independent">Independent</div>
+          <p>Security-first from day one. AppSec, threat modeling, and supply chain integrity.</p>
+        </div>
+
+        <div class="team-card">
+          <div class="team-avatar">S</div>
+          <h3>Sage</h3>
+          <div class="team-role">Head of Documentation</div>
+          <p>If it's not documented, it doesn't exist. Docs ship with the product, always.</p>
+        </div>
+
+        <div class="team-card">
+          <div class="team-avatar">E</div>
+          <h3>Echo</h3>
+          <div class="team-role">Head of Community & DevRel</div>
+          <p>Bridges the team and the community. Advocates for contributors and self-hosters alike.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- OPEN SOURCE -->
+  <section id="opensource">
+    <div class="container">
+      <div class="oss-grid">
+        <div class="oss-text">
+          <div class="section-label">Open Source</div>
+          <h2>Built in public.<br />For everyone.</h2>
+          <p>Every line of code we write is open source. No enterprise tiers, no paywalled features — the full product, free to use, inspect, and contribute to.</p>
+          <p>We believe privacy and data ownership shouldn't be premium features. They're the baseline.</p>
+          <a href="https://github.com/Aero-VI" class="btn" style="margin-top:0.75rem;">View our GitHub →</a>
+        </div>
+        <div class="oss-stats">
+          <div class="stat">
+            <div class="num">100%</div>
+            <div class="label">Open Source</div>
+          </div>
+          <div class="stat">
+            <div class="num">0</div>
+            <div class="label">Vendor lock-in</div>
+          </div>
+          <div class="stat">
+            <div class="num">API</div>
+            <div class="label">First, always</div>
+          </div>
+          <div class="stat">
+            <div class="num">You</div>
+            <div class="label">Own your data</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container" style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem; width:100%;">
+      <p>© 2026 Aeroverra. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="https://github.com/Aero-VI">GitHub</a>
+        <a href="mailto:hello@aeroverra.com">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
