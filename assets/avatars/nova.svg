@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <radialGradient id="bg-nova" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#1a1505"/>
+      <stop offset="100%" stop-color="#080600"/>
+    </radialGradient>
+    <radialGradient id="starburst-nova" cx="50%" cy="20%" r="40%">
+      <stop offset="0%" stop-color="#ffd700" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#ff8c00" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- Background -->
+  <circle cx="100" cy="100" r="100" fill="url(#bg-nova)"/>
+  <!-- Starburst glow at top -->
+  <circle cx="100" cy="100" r="100" fill="url(#starburst-nova)"/>
+  <!-- Star points decorative -->
+  <path d="M 100 8 L 103 18 L 113 15 L 106 23 L 115 30 L 104 28 L 104 40 L 100 30 L 96 40 L 96 28 L 85 30 L 94 23 L 87 15 L 97 18 Z" fill="#ffd700" opacity="0.5"/>
+  <!-- Small stars -->
+  <path d="M 30 25 L 32 30 L 37 30 L 33 33 L 35 38 L 30 35 L 25 38 L 27 33 L 23 30 L 28 30 Z" fill="#ffd700" opacity="0.35"/>
+  <path d="M 168 28 L 170 33 L 175 33 L 171 36 L 173 41 L 168 38 L 163 41 L 165 36 L 161 33 L 166 33 Z" fill="#ffd700" opacity="0.35"/>
+
+  <!-- Quality badge checkmark decorative elements -->
+  <circle cx="25" cy="160" r="12" fill="none" stroke="#ffd700" stroke-width="1.5" opacity="0.3"/>
+  <path d="M 19 160 L 23 164 L 31 156" stroke="#ffd700" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.4"/>
+  <circle cx="175" cy="160" r="12" fill="none" stroke="#ffd700" stroke-width="1.5" opacity="0.3"/>
+  <path d="M 169 160 L 173 164 L 181 156" stroke="#ffd700" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.4"/>
+
+  <!-- Lab coat / professional outfit -->
+  <path d="M 0 200 L 0 148 Q 30 133 58 146 L 74 166 L 100 160 L 126 166 L 142 146 Q 170 133 200 148 L 200 200 Z" fill="#f0ece4"/>
+  <!-- Lab coat lapels -->
+  <path d="M 74 166 L 82 152 L 100 160 L 118 152 L 126 166 L 100 157 Z" fill="#e0dcd4"/>
+  <path d="M 82 152 L 100 163 L 118 152" stroke="#c0c0b0" stroke-width="1" fill="none"/>
+  <!-- Gold pen clip -->
+  <rect x="125" y="150" width="4" height="14" rx="1" fill="#ffd700" opacity="0.8"/>
+  <circle cx="127" cy="150" r="3" fill="#ffd700" opacity="0.7"/>
+
+  <!-- Neck -->
+  <rect x="90" y="143" width="20" height="20" rx="4" fill="#d4a870"/>
+  <!-- Head -->
+  <ellipse cx="100" cy="114" rx="34" ry="37" fill="#ddb880"/>
+  <!-- Ears -->
+  <ellipse cx="66" cy="116" rx="6.5" ry="9" fill="#caa870"/>
+  <ellipse cx="134" cy="116" rx="6.5" ry="9" fill="#caa870"/>
+  <ellipse cx="66" cy="116" rx="4" ry="6" fill="#d4a870"/>
+  <ellipse cx="134" cy="116" rx="4" ry="6" fill="#d4a870"/>
+  <!-- Gold stud earrings -->
+  <circle cx="65" cy="120" r="3" fill="#ffd700" opacity="0.9"/>
+  <circle cx="135" cy="120" r="3" fill="#ffd700" opacity="0.9"/>
+
+  <!-- Hair - pulled back, professional bun -->
+  <path d="M 66 104 Q 66 66 100 62 Q 134 66 134 104 Q 126 78 100 76 Q 74 78 66 104 Z" fill="#2a1e0a"/>
+  <!-- Bun at back/top -->
+  <ellipse cx="100" cy="63" rx="14" ry="9" fill="#2a1e0a"/>
+  <ellipse cx="100" cy="62" rx="10" ry="7" fill="#3a2a0e"/>
+  <!-- Hair band detail -->
+  <ellipse cx="100" cy="68" rx="14" ry="3" fill="#ffd700" opacity="0.5"/>
+
+  <!-- Eyebrows - neat, defined -->
+  <path d="M 80 103 Q 88 100 95 102" stroke="#2a1e0a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M 105 102 Q 112 100 120 103" stroke="#2a1e0a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Eyes - bright, alert. Gold/hazel -->
+  <ellipse cx="88" cy="113" rx="6.5" ry="6.5" fill="#fff"/>
+  <ellipse cx="112" cy="113" rx="6.5" ry="6.5" fill="#fff"/>
+  <circle cx="88" cy="113" r="5" fill="#a0780a"/>
+  <circle cx="112" cy="113" r="5" fill="#a0780a"/>
+  <circle cx="88" cy="113" r="3.2" fill="#180e00"/>
+  <circle cx="112" cy="113" r="3.2" fill="#180e00"/>
+  <circle cx="89.5" cy="111.5" r="1.5" fill="rgba(255,255,255,0.9)"/>
+  <circle cx="113.5" cy="111.5" r="1.5" fill="rgba(255,255,255,0.9)"/>
+
+  <!-- Nose -->
+  <path d="M 100 118 Q 97 126 95 128 Q 100 131 105 128 Q 103 126 100 118" fill="#aa8050" opacity="0.7"/>
+
+  <!-- Mouth - confident, bright smile -->
+  <path d="M 90 137 Q 100 145 110 137" stroke="#884020" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M 93 135 Q 100 138 107 135" stroke="#e08060" stroke-width="1.5" fill="none" opacity="0.7"/>
+
+  <!-- Gold glow ring -->
+  <circle cx="100" cy="100" r="97" fill="none" stroke="#ffd700" stroke-width="2" opacity="0.4"/>
+</svg>

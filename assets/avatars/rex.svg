@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <radialGradient id="bg-rex" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#1e0e06"/>
+      <stop offset="100%" stop-color="#0a0502"/>
+    </radialGradient>
+  </defs>
+  <!-- Background -->
+  <circle cx="100" cy="100" r="100" fill="url(#bg-rex)"/>
+  <!-- Server rack lines (technical infrastructure vibe) -->
+  <rect x="12" y="30" width="20" height="4" rx="1" fill="#e07b39" opacity="0.15"/>
+  <rect x="12" y="38" width="20" height="4" rx="1" fill="#e07b39" opacity="0.1"/>
+  <rect x="12" y="46" width="20" height="4" rx="1" fill="#e07b39" opacity="0.08"/>
+  <rect x="168" y="30" width="20" height="4" rx="1" fill="#e07b39" opacity="0.15"/>
+  <rect x="168" y="38" width="20" height="4" rx="1" fill="#e07b39" opacity="0.1"/>
+  <rect x="168" y="46" width="20" height="4" rx="1" fill="#e07b39" opacity="0.08"/>
+  <!-- Status LED dot -->
+  <circle cx="22" cy="55" r="3" fill="#00ff88" opacity="0.5"/>
+  <circle cx="178" cy="55" r="3" fill="#00ff88" opacity="0.5"/>
+
+  <!-- Work jacket / tech wear -->
+  <path d="M 0 200 L 0 148 Q 28 132 56 144 L 72 168 L 100 160 L 128 168 L 144 144 Q 172 132 200 148 L 200 200 Z" fill="#1a0e06"/>
+  <!-- Jacket zipper/front -->
+  <path d="M 74 168 L 82 152 L 100 162 L 118 152 L 126 168 L 100 160 Z" fill="#220e08"/>
+  <line x1="100" y1="162" x2="100" y2="200" stroke="#2e1208" stroke-width="3"/>
+  <!-- Orange accent stripe on jacket -->
+  <path d="M 56 144 Q 60 148 64 160" stroke="#e07b39" stroke-width="3" fill="none" opacity="0.6"/>
+  <path d="M 144 144 Q 140 148 136 160" stroke="#e07b39" stroke-width="3" fill="none" opacity="0.6"/>
+  <!-- Utility strap/badge -->
+  <rect x="65" y="155" width="15" height="10" rx="2" fill="#2a1208" stroke="#e07b39" stroke-width="1" opacity="0.7"/>
+
+  <!-- Neck -->
+  <rect x="90" y="143" width="20" height="20" rx="4" fill="#8b5e3c"/>
+  <!-- Head - strong, broader jaw -->
+  <ellipse cx="100" cy="115" rx="36" ry="37" fill="#9a6840"/>
+  <!-- Jaw wider at bottom -->
+  <path d="M 64 118 Q 66 138 80 146 Q 100 152 120 146 Q 134 138 136 118" fill="#9a6840" opacity="0.6"/>
+  <!-- Ears -->
+  <ellipse cx="64" cy="118" rx="7" ry="10" fill="#8a5830"/>
+  <ellipse cx="136" cy="118" rx="7" ry="10" fill="#8a5830"/>
+  <ellipse cx="64" cy="118" rx="4" ry="7" fill="#9a6840"/>
+  <ellipse cx="136" cy="118" rx="4" ry="7" fill="#9a6840"/>
+
+  <!-- Hair - very short/buzzed, dark -->
+  <path d="M 64 107 Q 64 70 100 66 Q 136 70 136 107 Q 130 82 100 80 Q 70 82 64 107 Z" fill="#1a0e08"/>
+  <!-- Short stubble texture -->
+  <path d="M 64 107 Q 65 100 68 97" stroke="#1a0e08" stroke-width="2" fill="none"/>
+  <path d="M 136 107 Q 135 100 132 97" stroke="#1a0e08" stroke-width="2" fill="none"/>
+  <!-- Slight stubble on face -->
+  <ellipse cx="85" cy="136" rx="10" ry="4" fill="#6a3820" opacity="0.2"/>
+  <ellipse cx="115" cy="136" rx="10" ry="4" fill="#6a3820" opacity="0.2"/>
+  <ellipse cx="100" cy="143" rx="14" ry="4" fill="#6a3820" opacity="0.2"/>
+
+  <!-- Eyebrows - thick, strong -->
+  <path d="M 79 104 Q 88 100 96 103" stroke="#1a0e08" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M 104 103 Q 112 100 121 104" stroke="#1a0e08" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- Eyes - steady, direct -->
+  <ellipse cx="88" cy="114" rx="7" ry="6.5" fill="#fff"/>
+  <ellipse cx="112" cy="114" rx="7" ry="6.5" fill="#fff"/>
+  <circle cx="88" cy="114" r="5" fill="#3a2010"/>
+  <circle cx="112" cy="114" r="5" fill="#3a2010"/>
+  <circle cx="88" cy="114" r="3.2" fill="#0e0806"/>
+  <circle cx="112" cy="114" r="3.2" fill="#0e0806"/>
+  <circle cx="89.5" cy="112.5" r="1.5" fill="rgba(255,255,255,0.8)"/>
+  <circle cx="113.5" cy="112.5" r="1.5" fill="rgba(255,255,255,0.8)"/>
+
+  <!-- Nose - broader -->
+  <path d="M 100 119 Q 96 128 93 130 Q 100 134 107 130 Q 104 128 100 119" fill="#7a4820" opacity="0.8"/>
+
+  <!-- Mouth - set jaw, neutral -->
+  <path d="M 89 140 Q 100 145 111 140" stroke="#5a2c10" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Orange glow ring -->
+  <circle cx="100" cy="100" r="97" fill="none" stroke="#e07b39" stroke-width="2" opacity="0.4"/>
+  <!-- Server icon top left -->
+  <rect x="18" y="18" width="16" height="20" rx="2" fill="none" stroke="#e07b39" stroke-width="1.5" opacity="0.5"/>
+  <line x1="18" y1="24" x2="34" y2="24" stroke="#e07b39" stroke-width="1" opacity="0.5"/>
+  <line x1="18" y1="30" x2="34" y2="30" stroke="#e07b39" stroke-width="1" opacity="0.5"/>
+  <circle cx="31" cy="22" r="1.5" fill="#00ff88" opacity="0.6"/>
+</svg>

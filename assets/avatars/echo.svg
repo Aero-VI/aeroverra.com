@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <radialGradient id="bg-echo" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#1a0e08"/>
+      <stop offset="100%" stop-color="#080402"/>
+    </radialGradient>
+    <radialGradient id="warmglow-echo" cx="50%" cy="70%" r="50%">
+      <stop offset="0%" stop-color="#ff7043" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#ff4500" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- Background -->
+  <circle cx="100" cy="100" r="100" fill="url(#bg-echo)"/>
+  <!-- Warm glow bottom -->
+  <circle cx="100" cy="100" r="100" fill="url(#warmglow-echo)"/>
+  <!-- Sound wave / echo rings (community feel) -->
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#ff7043" stroke-width="1" opacity="0.12"/>
+  <circle cx="100" cy="100" r="78" fill="none" stroke="#ff7043" stroke-width="0.8" opacity="0.1"/>
+  <circle cx="100" cy="100" r="66" fill="none" stroke="#ff9e7a" stroke-width="0.6" opacity="0.08"/>
+
+  <!-- Sound wave arcs on sides -->
+  <path d="M 18 80 Q 10 100 18 120" fill="none" stroke="#ff7043" stroke-width="2" stroke-linecap="round" opacity="0.35"/>
+  <path d="M 26 72 Q 14 100 26 128" fill="none" stroke="#ff7043" stroke-width="1.5" stroke-linecap="round" opacity="0.25"/>
+  <path d="M 182 80 Q 190 100 182 120" fill="none" stroke="#ff7043" stroke-width="2" stroke-linecap="round" opacity="0.35"/>
+  <path d="M 174 72 Q 186 100 174 128" fill="none" stroke="#ff7043" stroke-width="1.5" stroke-linecap="round" opacity="0.25"/>
+
+  <!-- Casual/friendly top -->
+  <path d="M 0 200 L 0 150 Q 28 134 56 147 L 74 168 L 100 162 L 126 168 L 144 147 Q 172 134 200 150 L 200 200 Z" fill="#1a0e08"/>
+  <!-- Round neck casual top -->
+  <path d="M 78 165 Q 88 156 100 160 Q 112 156 122 165 L 100 162 Z" fill="#220e0a"/>
+  <!-- Warm orange accent -->
+  <path d="M 56 147 Q 62 150 68 162" stroke="#ff7043" stroke-width="2.5" fill="none" opacity="0.6"/>
+  <path d="M 144 147 Q 138 150 132 162" stroke="#ff7043" stroke-width="2.5" fill="none" opacity="0.6"/>
+
+  <!-- Neck -->
+  <rect x="90" y="143" width="20" height="22" rx="4" fill="#9e6644"/>
+  <!-- Head -->
+  <ellipse cx="100" cy="114" rx="35" ry="38" fill="#b07850"/>
+  <!-- Ears -->
+  <ellipse cx="65" cy="117" rx="6.5" ry="9" fill="#a06840"/>
+  <ellipse cx="135" cy="117" rx="6.5" ry="9" fill="#a06840"/>
+  <ellipse cx="65" cy="117" rx="4" ry="6" fill="#b07850"/>
+  <ellipse cx="135" cy="117" rx="4" ry="6" fill="#b07850"/>
+  <!-- Orange hoop earrings - community/creative -->
+  <circle cx="64" cy="120" r="5" fill="none" stroke="#ff7043" stroke-width="2" opacity="0.8"/>
+  <circle cx="136" cy="120" r="5" fill="none" stroke="#ff7043" stroke-width="2" opacity="0.8"/>
+
+  <!-- Hair - natural, relaxed, medium curly afro-textured -->
+  <ellipse cx="100" cy="88" rx="44" ry="32" fill="#1e1008"/>
+  <!-- Curly texture suggestions -->
+  <path d="M 60 100 Q 58 88 66 82 Q 62 90 64 100 Z" fill="#2a1a0e"/>
+  <path d="M 140 100 Q 142 88 134 82 Q 138 90 136 100 Z" fill="#2a1a0e"/>
+  <path d="M 70 74 Q 78 66 88 68 Q 80 70 76 78 Z" fill="#2a1a0e"/>
+  <path d="M 112 68 Q 122 66 130 74 Q 124 78 120 70 Z" fill="#2a1a0e"/>
+  <path d="M 92 64 Q 100 60 108 64 Q 100 62 92 64 Z" fill="#2a1a0e"/>
+  <!-- Coil highlights -->
+  <path d="M 68 90 Q 72 84 76 88" stroke="#3a2418" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M 124 88 Q 128 84 132 90" stroke="#3a2418" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M 88 68 Q 92 62 96 66" stroke="#3a2418" stroke-width="2" fill="none" opacity="0.7"/>
+
+  <!-- Eyebrows - natural, expressive -->
+  <path d="M 80 104 Q 88 101 96 103" stroke="#1e1008" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M 104 103 Q 112 101 120 104" stroke="#1e1008" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- Eyes - warm, open, welcoming -->
+  <ellipse cx="88" cy="114" rx="7" ry="7" fill="#fff"/>
+  <ellipse cx="112" cy="114" rx="7" ry="7" fill="#fff"/>
+  <circle cx="88" cy="114" r="5.5" fill="#6b3010"/>
+  <circle cx="112" cy="114" r="5.5" fill="#6b3010"/>
+  <circle cx="88" cy="114" r="3.5" fill="#140800"/>
+  <circle cx="112" cy="114" r="3.5" fill="#140800"/>
+  <circle cx="89.5" cy="112.5" r="1.8" fill="rgba(255,255,255,0.9)"/>
+  <circle cx="113.5" cy="112.5" r="1.8" fill="rgba(255,255,255,0.9)"/>
+
+  <!-- Nose -->
+  <path d="M 100 119 Q 96 128 93 130 Q 100 134 107 130 Q 104 128 100 119" fill="#8a5828" opacity="0.8"/>
+
+  <!-- Mouth - big, warm smile (community person) -->
+  <path d="M 88 140 Q 100 150 112 140" stroke="#6b2808" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M 91 138 Q 100 142 109 138" stroke="#e08060" stroke-width="2" fill="none" opacity="0.8"/>
+  <!-- Smile cheek dimples -->
+  <circle cx="80" cy="136" r="3" fill="#c06840" opacity="0.2"/>
+  <circle cx="120" cy="136" r="3" fill="#c06840" opacity="0.2"/>
+
+  <!-- Coral glow ring -->
+  <circle cx="100" cy="100" r="97" fill="none" stroke="#ff7043" stroke-width="2" opacity="0.4"/>
+</svg>
