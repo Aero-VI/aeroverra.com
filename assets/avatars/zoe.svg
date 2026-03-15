@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <clipPath id="circle-zoe"><circle cx="100" cy="100" r="100"/></clipPath>
+    <radialGradient id="bg-zoe" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#1a3828"/>
+      <stop offset="100%" stop-color="#0a1810"/>
+    </radialGradient>
+  </defs>
+  <!-- Background -->
+  <circle cx="100" cy="100" r="100" fill="url(#bg-zoe)"/>
+  <circle cx="100" cy="100" r="97" fill="none" stroke="#40a060" stroke-width="1.5" opacity="0.35"/>
+
+  <!-- Simple professional top / shoulders -->
+  <path d="M 0 200 L 0 158 Q 32 146 60 154 L 72 168 L 100 162 L 128 168 L 140 154 Q 168 146 200 158 L 200 200 Z" fill="#1a2a22"/>
+  <!-- Modest neckline -->
+  <path d="M 80 158 Q 100 168 120 158" fill="#203028"/>
+  <!-- Simple top front -->
+  <path d="M 86 162 L 90 200 L 110 200 L 114 162 Z" fill="#182820"/>
+
+  <!-- Neck -->
+  <rect x="89" y="143" width="22" height="22" rx="5" fill="#c8a080"/>
+  <!-- Head -->
+  <ellipse cx="100" cy="116" rx="35" ry="37" fill="#d4aa88"/>
+  <!-- Ears -->
+  <ellipse cx="65" cy="118" rx="6" ry="8" fill="#c09470"/>
+  <ellipse cx="135" cy="118" rx="6" ry="8" fill="#c09470"/>
+  <ellipse cx="66" cy="118" rx="3.5" ry="5.5" fill="#c89a78"/>
+  <ellipse cx="134" cy="118" rx="3.5" ry="5.5" fill="#c89a78"/>
+
+  <!-- Hair - straight, medium length, dark brown -->
+  <path d="M 65 108 Q 65 70 100 66 Q 135 70 135 108 Q 127 82 100 80 Q 73 82 65 108 Z" fill="#1a1008"/>
+  <!-- Hair falling straight down sides -->
+  <path d="M 65 108 L 60 155 Q 62 160 68 158 L 68 105 Z" fill="#1a1008"/>
+  <path d="M 135 108 L 140 155 Q 138 160 132 158 L 132 105 Z" fill="#1a1008"/>
+  <!-- Hair side layers -->
+  <path d="M 65 108 Q 68 94 73 88 L 68 105 Z" fill="#221610"/>
+  <path d="M 135 108 Q 132 94 127 88 L 132 105 Z" fill="#221610"/>
+
+  <!-- Eyebrows - calm, natural -->
+  <path d="M 81 105 Q 87 102 94 104" stroke="#1a1008" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M 106 104 Q 113 102 119 105" stroke="#1a1008" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Eyes -->
+  <ellipse cx="88" cy="114" rx="6" ry="6.5" fill="#fff"/>
+  <ellipse cx="112" cy="114" rx="6" ry="6.5" fill="#fff"/>
+  <circle cx="89" cy="114" r="4" fill="#3a6030"/>
+  <circle cx="113" cy="114" r="4" fill="#3a6030"/>
+  <circle cx="90" cy="112" r="1.5" fill="rgba(255,255,255,0.7)"/>
+  <circle cx="114" cy="112" r="1.5" fill="rgba(255,255,255,0.7)"/>
+
+  <!-- Nose -->
+  <path d="M 100 120 Q 97 128 95 130 Q 100 133 105 130 Q 103 128 100 120" fill="#b08060" opacity="0.8"/>
+
+  <!-- Mouth - gentle calm smile -->
+  <path d="M 91 140 Q 100 145 109 140" stroke="#8a4525" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M 93 140 Q 100 142 107 140" stroke="#d09080" stroke-width="1" fill="none" opacity="0.5"/>
+</svg>

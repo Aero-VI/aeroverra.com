@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <clipPath id="circle-bex"><circle cx="100" cy="100" r="100"/></clipPath>
+    <radialGradient id="bg-bex" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#2a1a40"/>
+      <stop offset="100%" stop-color="#120a20"/>
+    </radialGradient>
+  </defs>
+  <!-- Background -->
+  <circle cx="100" cy="100" r="100" fill="url(#bg-bex)"/>
+  <circle cx="100" cy="100" r="97" fill="none" stroke="#8060c0" stroke-width="1.5" opacity="0.4"/>
+
+  <!-- Button-up shirt / shoulders -->
+  <path d="M 0 200 L 0 158 Q 32 146 60 154 L 72 168 L 100 162 L 128 168 L 140 154 Q 168 146 200 158 L 200 200 Z" fill="#282040"/>
+  <!-- Collar -->
+  <path d="M 80 158 L 90 152 L 100 162 L 110 152 L 120 158 L 100 162 Z" fill="#302848"/>
+  <!-- Button line -->
+  <line x1="100" y1="162" x2="100" y2="200" stroke="#605080" stroke-width="1" opacity="0.5"/>
+  <circle cx="100" cy="172" r="2" fill="#605080" opacity="0.6"/>
+  <circle cx="100" cy="184" r="2" fill="#605080" opacity="0.6"/>
+  <!-- Shirt front -->
+  <path d="M 88 162 L 92 200 L 108 200 L 112 162 Z" fill="#24203a"/>
+
+  <!-- Neck -->
+  <rect x="89" y="143" width="22" height="22" rx="5" fill="#d8b898"/>
+  <!-- Head -->
+  <ellipse cx="100" cy="116" rx="35" ry="37" fill="#e0c0a0"/>
+  <!-- Ears -->
+  <ellipse cx="65" cy="118" rx="6" ry="8" fill="#d0a880"/>
+  <ellipse cx="135" cy="118" rx="6" ry="8" fill="#d0a880"/>
+  <ellipse cx="66" cy="118" rx="3.5" ry="5.5" fill="#d8b090"/>
+  <ellipse cx="134" cy="118" rx="3.5" ry="5.5" fill="#d8b090"/>
+
+  <!-- Hair - short, neat, sandy brown -->
+  <path d="M 65 108 Q 65 72 100 67 Q 135 72 135 108 Q 128 84 100 82 Q 72 84 65 108 Z" fill="#4a3220"/>
+  <!-- Clean sides -->
+  <path d="M 65 108 Q 68 96 74 92 L 74 104 Z" fill="#4a3220"/>
+  <path d="M 135 108 Q 132 96 126 92 L 126 104 Z" fill="#4a3220"/>
+  <!-- Slight part -->
+  <path d="M 80 78 Q 90 72 100 70 L 98 80 Q 90 78 82 82 Z" fill="#3e2a18"/>
+
+  <!-- Eyebrows - sharp, analytical -->
+  <path d="M 80 103 Q 88 99 95 102" stroke="#3a2818" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M 105 102 Q 112 99 120 103" stroke="#3a2818" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- Eyes -->
+  <ellipse cx="88" cy="114" rx="6" ry="6.5" fill="#fff"/>
+  <ellipse cx="112" cy="114" rx="6" ry="6.5" fill="#fff"/>
+  <circle cx="89" cy="114" r="4" fill="#405060"/>
+  <circle cx="113" cy="114" r="4" fill="#405060"/>
+  <circle cx="90" cy="112" r="1.5" fill="rgba(255,255,255,0.7)"/>
+  <circle cx="114" cy="112" r="1.5" fill="rgba(255,255,255,0.7)"/>
+
+  <!-- Nose -->
+  <path d="M 100 120 Q 97 128 95 130 Q 100 133 105 130 Q 103 128 100 120" fill="#c09068" opacity="0.8"/>
+
+  <!-- Mouth - focused half-smile -->
+  <path d="M 91 139 Q 100 144 109 139" stroke="#8a4525" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M 93 139 Q 100 141 107 139" stroke="#d09080" stroke-width="1" fill="none" opacity="0.5"/>
+</svg>
