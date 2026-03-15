@@ -398,19 +398,55 @@
       font-size: 0.9rem;
     }
 
-    /* ── Tier 2: COO + Chief of Staff ── */
+    /* ── Tier 2: COO ── */
     .tier-2 .team-card {
       flex: 1;
       min-width: 260px;
       max-width: 340px;
     }
 
-    /* ── Tier 3: Department Heads ── */
+    /* ── Tier 3: Directors ── */
     .tier-3 {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 1rem;
       width: 100%;
+    }
+
+    /* ── Tier 4: Engineers & Specialists ── */
+    .tier-4 {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 1rem;
+      width: 100%;
+    }
+
+    .tier-4 .team-card {
+      padding: 1.25rem;
+    }
+
+    .tier-4 .team-avatar-img {
+      width: 52px;
+      height: 52px;
+    }
+
+    .tier-4 h3 {
+      font-size: 0.92rem;
+    }
+
+    .tier-4 .team-role {
+      font-size: 0.78rem;
+    }
+
+    .tier-4 p {
+      font-size: 0.8rem;
+    }
+
+    .team-reports {
+      font-size: 0.72rem;
+      color: var(--muted);
+      opacity: 0.7;
+      margin-bottom: 0.4rem;
     }
 
     /* ─── OPEN SOURCE ─────────────────────────────────────── */
@@ -497,12 +533,16 @@
       .tier-3 {
         grid-template-columns: repeat(3, 1fr);
       }
+      .tier-4 {
+        grid-template-columns: repeat(3, 1fr);
+      }
     }
 
     @media (max-width: 768px) {
       .oss-grid { grid-template-columns: 1fr; }
       .oss-principles { grid-template-columns: 1fr 1fr; }
       .tier-3 { grid-template-columns: repeat(2, 1fr); }
+      .tier-4 { grid-template-columns: repeat(2, 1fr); }
       .tier-2 .team-card { min-width: 220px; }
     }
 
@@ -551,6 +591,7 @@
       .tier-1 .team-card { max-width: 100%; }
       .tier-2 .team-card { width: 100%; max-width: 100%; }
       .tier-3 { grid-template-columns: 1fr 1fr; }
+      .tier-4 { grid-template-columns: 1fr 1fr; }
       .org-connector { height: 2rem; }
 
       /* OSS */
@@ -562,6 +603,7 @@
 
     @media (max-width: 420px) {
       .tier-3 { grid-template-columns: 1fr; }
+      .tier-4 { grid-template-columns: 1fr; }
       .oss-principles { grid-template-columns: 1fr; }
     }
   </style>
@@ -644,7 +686,7 @@
 
       <div class="org-tree">
 
-        <!-- ── Tier 1: CEO ── -->
+        <!-- ── Tier 1: Executive ── -->
         <div class="org-tier tier-1">
           <div class="org-tier-label">Executive</div>
           <div class="team-card">
@@ -657,7 +699,7 @@
 
         <div class="org-connector" aria-hidden="true"></div>
 
-        <!-- ── Tier 2: COO + Chief of Staff ── -->
+        <!-- ── Tier 1b: COO ── -->
         <div class="org-tier tier-2">
           <div class="org-tier-label" style="width:100%;text-align:center;margin-bottom:1.25rem;">Operations</div>
 
@@ -665,58 +707,40 @@
             <img src="assets/avatars/azula.svg" alt="Azula" class="team-avatar-img" />
             <h3>Azula</h3>
             <div class="team-role">Chief Operating Officer</div>
+            <div class="team-reports">Reports to Nicholas</div>
             <p>Keeps everything moving with ruthless precision. Owns execution across all teams and makes sure nothing slips through the cracks.</p>
-          </div>
-
-          <div class="team-card">
-            <img src="assets/avatars/orion.svg" alt="Orion" class="team-avatar-img" />
-            <h3>Orion</h3>
-            <div class="team-role">Chief of Staff</div>
-            <p>Day-to-day coordination across all team leads. Tracks work in flight, unblocks handoffs, and keeps leadership informed in real time.</p>
           </div>
         </div>
 
         <div class="org-connector" aria-hidden="true"></div>
 
-        <!-- ── Tier 3: Department Heads ── -->
+        <!-- ── Tier 2: Directors ── -->
         <div class="org-tier" style="flex-direction:column;align-items:stretch;gap:0;">
-          <div class="org-tier-label">Department Heads</div>
+          <div class="org-tier-label">Directors</div>
           <div class="tier-3">
 
             <div class="team-card">
               <img src="assets/avatars/zara.svg" alt="Zara" class="team-avatar-img" />
               <h3>Zara</h3>
               <div class="team-role">Head of Product</div>
+              <div class="team-reports">Reports to Azula</div>
               <p>Owns the roadmap, backlog, and the "why" behind everything we build. Bridges user needs and engineering reality.</p>
             </div>
 
             <div class="team-card">
-              <img src="assets/avatars/lyra.svg" alt="Lyra" class="team-avatar-img" />
-              <h3>Lyra</h3>
-              <div class="team-role">Head of Design &amp; UX</div>
+              <img src="assets/avatars/skye.svg" alt="Skye" class="team-avatar-img" />
+              <h3>Skye</h3>
+              <div class="team-role">Head of Design</div>
+              <div class="team-reports">Reports to Azula</div>
               <p>Makes self-hosting intuitive. Owns product UX from first install to power-user workflows — complexity is the enemy of adoption.</p>
             </div>
 
             <div class="team-card">
-              <img src="assets/avatars/kai.svg" alt="Kai" class="team-avatar-img" />
-              <h3>Kai</h3>
-              <div class="team-role">Head of Engineering</div>
-              <p>Backend, frontend, and architecture. Owns product delivery and ensures nothing ships unless it's built right.</p>
-            </div>
-
-            <div class="team-card">
-              <img src="assets/avatars/rex.svg" alt="Rex" class="team-avatar-img" />
-              <h3>Rex</h3>
-              <div class="team-role">Head of Platform &amp; SRE</div>
-              <p>Infrastructure, CI/CD, installer quality, and observability. Keeps the lights on and the deployment story seamless.</p>
-            </div>
-
-            <div class="team-card">
-              <img src="assets/avatars/nova.svg" alt="Nova" class="team-avatar-img" />
-              <h3>Nova</h3>
-              <div class="team-role">Head of Quality</div>
-              <div class="badge-independent">Independent</div>
-              <p>Nothing ships without sign-off. E2E testing across desktop and mobile, release gates, and zero compromise on quality.</p>
+              <img src="assets/avatars/maya.svg" alt="Maya" class="team-avatar-img" />
+              <h3>Maya</h3>
+              <div class="team-role">Engineering Lead</div>
+              <div class="team-reports">Reports to Azula</div>
+              <p>Leads the engineering team. Owns architecture, delivery, and technical quality across all products.</p>
             </div>
 
             <div class="team-card">
@@ -724,13 +748,24 @@
               <h3>Cipher</h3>
               <div class="team-role">Chief Security Officer</div>
               <div class="badge-independent">Independent</div>
+              <div class="team-reports">Reports to Azula</div>
               <p>Security from day one. AppSec, secrets management, auth, and OSS supply chain integrity — the last line of defense.</p>
+            </div>
+
+            <div class="team-card">
+              <img src="assets/avatars/nova.svg" alt="Nova" class="team-avatar-img" />
+              <h3>Nova</h3>
+              <div class="team-role">Head of Quality</div>
+              <div class="badge-independent">Independent</div>
+              <div class="team-reports">Reports to Azula</div>
+              <p>Nothing ships without sign-off. E2E testing across desktop and mobile, release gates, and zero compromise on quality.</p>
             </div>
 
             <div class="team-card">
               <img src="assets/avatars/sage.svg" alt="Sage" class="team-avatar-img" />
               <h3>Sage</h3>
               <div class="team-role">Head of Documentation</div>
+              <div class="team-reports">Reports to Azula</div>
               <p>If it's not documented, it doesn't exist. Docs ship with every product release — always current, never an afterthought.</p>
             </div>
 
@@ -738,10 +773,69 @@
               <img src="assets/avatars/echo.svg" alt="Echo" class="team-avatar-img" />
               <h3>Echo</h3>
               <div class="team-role">Head of Community &amp; DevRel</div>
+              <div class="team-reports">Reports to Azula</div>
               <p>Bridges the team and the community. Champions contributors and self-hosters, bringing real feedback directly into the product.</p>
             </div>
 
+            <div class="team-card">
+              <img src="assets/avatars/zoe.svg" alt="Zoe" class="team-avatar-img" />
+              <h3>Zoe</h3>
+              <div class="team-role">Reliability Engineer</div>
+              <div class="team-reports">Reports to Azula</div>
+              <p>Infrastructure, CI/CD, observability, and uptime. Keeps the deployment story seamless and the systems rock-solid.</p>
+            </div>
+
           </div><!-- /.tier-3 -->
+        </div>
+
+        <div class="org-connector" aria-hidden="true"></div>
+
+        <!-- ── Tier 3: Engineers & Specialists ── -->
+        <div class="org-tier" style="flex-direction:column;align-items:stretch;gap:0;">
+          <div class="org-tier-label">Engineers &amp; Specialists</div>
+          <div class="tier-4">
+
+            <div class="team-card">
+              <img src="assets/avatars/pixel.svg" alt="Pixel" class="team-avatar-img" />
+              <h3>Pixel</h3>
+              <div class="team-role">Frontend Engineer</div>
+              <div class="team-reports">Reports to Maya</div>
+              <p>Builds the interfaces users actually touch. Pixel-perfect components, responsive layouts, and smooth interactions.</p>
+            </div>
+
+            <div class="team-card">
+              <img src="assets/avatars/kai.svg" alt="Kai" class="team-avatar-img" />
+              <h3>Kai</h3>
+              <div class="team-role">Backend Engineer</div>
+              <div class="team-reports">Reports to Maya</div>
+              <p>APIs, data layers, and server-side logic. Ensures everything behind the UI is fast, reliable, and well-tested.</p>
+            </div>
+
+            <div class="team-card">
+              <img src="assets/avatars/bex.svg" alt="Bex" class="team-avatar-img" />
+              <h3>Bex</h3>
+              <div class="team-role">QA Test Architect</div>
+              <div class="team-reports">Reports to Nova</div>
+              <p>Designs the test strategy and frameworks. Builds the scaffolding that makes comprehensive testing possible at scale.</p>
+            </div>
+
+            <div class="team-card">
+              <img src="assets/avatars/remi.svg" alt="Remi" class="team-avatar-img" />
+              <h3>Remi</h3>
+              <div class="team-role">QA Test Executor</div>
+              <div class="team-reports">Reports to Nova</div>
+              <p>Runs the test suites, catches regressions, and validates releases. The last checkpoint before code reaches users.</p>
+            </div>
+
+            <div class="team-card">
+              <img src="assets/avatars/jade.svg" alt="Jade" class="team-avatar-img" />
+              <h3>Jade</h3>
+              <div class="team-role">QA Test Analyst</div>
+              <div class="team-reports">Reports to Nova</div>
+              <p>Analyzes test results, tracks quality metrics, and identifies patterns. Turns testing data into actionable insights.</p>
+            </div>
+
+          </div><!-- /.tier-4 -->
         </div>
 
       </div><!-- /.org-tree -->

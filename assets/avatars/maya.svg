@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <clipPath id="circle-maya"><circle cx="100" cy="100" r="100"/></clipPath>
+    <radialGradient id="bg-maya" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#14253a"/>
+      <stop offset="100%" stop-color="#0a1220"/>
+    </radialGradient>
+  </defs>
+  <!-- Background -->
+  <circle cx="100" cy="100" r="100" fill="url(#bg-maya)"/>
+  <circle cx="100" cy="100" r="97" fill="none" stroke="#4080b0" stroke-width="1.5" opacity="0.4"/>
+
+  <!-- Blazer / shoulders -->
+  <path d="M 0 200 L 0 158 Q 32 144 60 153 L 72 170 L 100 162 L 128 170 L 140 153 Q 168 144 200 158 L 200 200 Z" fill="#1a2a42"/>
+  <!-- Blazer lapels -->
+  <path d="M 72 170 L 85 158 L 100 174 L 115 158 L 128 170 L 100 162 Z" fill="#223650"/>
+  <!-- Inner top -->
+  <path d="M 88 162 L 92 200 L 108 200 L 112 162 Z" fill="#c0c8d0" opacity="0.8"/>
+
+  <!-- Neck -->
+  <rect x="89" y="143" width="22" height="22" rx="5" fill="#6a4530"/>
+  <!-- Head -->
+  <ellipse cx="100" cy="116" rx="35" ry="37" fill="#7a5238"/>
+  <!-- Ears -->
+  <ellipse cx="65" cy="118" rx="6" ry="8" fill="#6a4530"/>
+  <ellipse cx="135" cy="118" rx="6" ry="8" fill="#6a4530"/>
+  <ellipse cx="66" cy="118" rx="3.5" ry="5.5" fill="#704a32"/>
+  <ellipse cx="134" cy="118" rx="3.5" ry="5.5" fill="#704a32"/>
+
+  <!-- Hair - natural, pulled back into bun -->
+  <path d="M 65 108 Q 65 70 100 66 Q 135 70 135 108 Q 127 82 100 80 Q 73 82 65 108 Z" fill="#0a0806"/>
+  <!-- Bun -->
+  <ellipse cx="100" cy="66" rx="14" ry="10" fill="#0a0806"/>
+  <ellipse cx="100" cy="64" rx="10" ry="7" fill="#141210"/>
+  <!-- Hair edges -->
+  <path d="M 65 108 Q 68 94 74 90 L 74 104 Z" fill="#0a0806"/>
+  <path d="M 135 108 Q 132 94 126 90 L 126 104 Z" fill="#0a0806"/>
+
+  <!-- Eyebrows - confident arch -->
+  <path d="M 80 104 Q 88 100 95 103" stroke="#0a0806" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M 105 103 Q 112 100 120 104" stroke="#0a0806" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- Eyes -->
+  <ellipse cx="88" cy="114" rx="6" ry="6.5" fill="#fff"/>
+  <ellipse cx="112" cy="114" rx="6" ry="6.5" fill="#fff"/>
+  <circle cx="89" cy="114" r="4" fill="#1a0f00"/>
+  <circle cx="113" cy="114" r="4" fill="#1a0f00"/>
+  <circle cx="90" cy="112" r="1.5" fill="rgba(255,255,255,0.7)"/>
+  <circle cx="114" cy="112" r="1.5" fill="rgba(255,255,255,0.7)"/>
+
+  <!-- Nose -->
+  <path d="M 100 120 Q 96 128 94 130 Q 100 134 106 130 Q 104 128 100 120" fill="#604028" opacity="0.8"/>
+
+  <!-- Mouth - confident smile -->
+  <path d="M 90 139 Q 100 146 110 139" stroke="#5a2818" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M 92 139 Q 100 142 108 139" stroke="#a06850" stroke-width="1" fill="none" opacity="0.5"/>
+
+  <!-- Small stud earrings -->
+  <circle cx="65" cy="122" r="2" fill="#c0c8d0"/>
+  <circle cx="135" cy="122" r="2" fill="#c0c8d0"/>
+</svg>
