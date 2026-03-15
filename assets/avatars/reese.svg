@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <clipPath id="clip-reese"><circle cx="100" cy="100" r="100"/></clipPath>
+    <radialGradient id="bg-reese" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#2a3a52"/>
+      <stop offset="100%" stop-color="#0e1726"/>
+    </radialGradient>
+  </defs>
+  <!-- Background -->
+  <circle cx="100" cy="100" r="100" fill="url(#bg-reese)"/>
+  <!-- Subtle steel accent ring -->
+  <circle cx="100" cy="100" r="97" fill="none" stroke="#6b8aad" stroke-width="1.5" opacity="0.4"/>
+
+  <!-- Blazer / shoulders -->
+  <path d="M 0 200 L 0 160 Q 28 146 56 153 L 68 168 L 100 160 L 132 168 L 144 153 Q 172 146 200 160 L 200 200 Z" fill="#1e2e42"/>
+  <!-- Blazer lapels -->
+  <path d="M 68 168 L 84 156 L 100 172 L 116 156 L 132 168 L 100 160 Z" fill="#263a52"/>
+  <!-- Button-up collar -->
+  <path d="M 88 160 L 92 200 L 108 200 L 112 160 Z" fill="#ddd8d0" opacity="0.92"/>
+  <!-- Collar points -->
+  <path d="M 84 156 L 92 162 L 88 160 Z" fill="#ccc7bf" opacity="0.8"/>
+  <path d="M 116 156 L 108 162 L 112 160 Z" fill="#ccc7bf" opacity="0.8"/>
+  <!-- Blazer button -->
+  <circle cx="100" cy="178" r="2.5" fill="#4a5f78"/>
+  <circle cx="100" cy="178" r="1.2" fill="#6b8aad"/>
+
+  <!-- Neck -->
+  <rect x="89" y="143" width="22" height="22" rx="5" fill="#c49470"/>
+  <!-- Head -->
+  <ellipse cx="100" cy="116" rx="35" ry="37" fill="#d4a67a"/>
+  <!-- Jaw definition -->
+  <path d="M 65 120 Q 68 138 84 146 Q 100 152 116 146 Q 132 138 135 120" fill="#c49470" opacity="0.4"/>
+
+  <!-- Ears -->
+  <ellipse cx="65" cy="118" rx="6" ry="8" fill="#b88860"/>
+  <ellipse cx="135" cy="118" rx="6" ry="8" fill="#b88860"/>
+  <ellipse cx="66" cy="118" rx="3.5" ry="5.5" fill="#c49470"/>
+  <ellipse cx="134" cy="118" rx="3.5" ry="5.5" fill="#c49470"/>
+
+  <!-- Hair - clean, short-to-medium styled professional cut -->
+  <path d="M 65 108 Q 65 68 100 64 Q 135 68 135 108 Q 127 82 100 80 Q 73 82 65 108 Z" fill="#1a1008"/>
+  <!-- Hair volume on top -->
+  <path d="M 72 90 Q 80 70 100 66 Q 120 70 128 90 Q 118 76 100 74 Q 82 76 72 90 Z" fill="#221610"/>
+  <!-- Side part styling -->
+  <path d="M 78 80 Q 82 72 90 70" stroke="#2a1a10" stroke-width="2" fill="none" opacity="0.6"/>
+  <!-- Hair sides -->
+  <path d="M 65 108 Q 68 96 74 92 L 74 104 Z" fill="#1a1008"/>
+  <path d="M 135 108 Q 132 96 126 92 L 126 104 Z" fill="#1a1008"/>
+
+  <!-- Eyebrows - strong, clean -->
+  <path d="M 80 104 Q 88 100 96 103" stroke="#1a1008" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+  <path d="M 104 103 Q 112 100 120 104" stroke="#1a1008" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+
+  <!-- Eyes - confident, composed -->
+  <ellipse cx="88" cy="114" rx="6" ry="6" fill="#fff"/>
+  <ellipse cx="112" cy="114" rx="6" ry="6" fill="#fff"/>
+  <circle cx="89" cy="114" r="4" fill="#3a2810"/>
+  <circle cx="113" cy="114" r="4" fill="#3a2810"/>
+  <circle cx="89" cy="114" r="2.5" fill="#1a0f00"/>
+  <circle cx="113" cy="114" r="2.5" fill="#1a0f00"/>
+  <circle cx="90" cy="112.5" r="1.3" fill="rgba(255,255,255,0.75)"/>
+  <circle cx="114" cy="112.5" r="1.3" fill="rgba(255,255,255,0.75)"/>
+
+  <!-- Nose -->
+  <path d="M 100 119 Q 97 127 95 129 Q 100 132 105 129 Q 103 127 100 119" fill="#a87850" opacity="0.75"/>
+
+  <!-- Mouth - composed, confident slight smile -->
+  <path d="M 91 139 Q 100 144 109 139" stroke="#7a4020" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+  <path d="M 94 137 Q 100 139 106 137" stroke="#c08060" stroke-width="1" fill="none" opacity="0.5"/>
+</svg>
