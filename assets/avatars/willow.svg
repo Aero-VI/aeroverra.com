@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <clipPath id="circle-willow"><circle cx="100" cy="100" r="100"/></clipPath>
+    <radialGradient id="bg-willow" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#0a2018"/>
+      <stop offset="100%" stop-color="#040e08"/>
+    </radialGradient>
+    <radialGradient id="glow-willow" cx="50%" cy="100%" r="60%">
+      <stop offset="0%" stop-color="#22c55e" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#16a34a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- Background -->
+  <circle cx="100" cy="100" r="100" fill="url(#bg-willow)"/>
+  <ellipse cx="100" cy="190" rx="85" ry="50" fill="url(#glow-willow)"/>
+  <!-- Subtle ring -->
+  <circle cx="100" cy="100" r="97" fill="none" stroke="#22c55e" stroke-width="1.5" opacity="0.3"/>
+
+  <!-- Outfit / shoulders -->
+  <path d="M 0 200 L 0 158 Q 32 147 60 155 L 72 170 L 100 163 L 128 170 L 140 155 Q 168 147 200 158 L 200 200 Z" fill="#0d2016"/>
+  <!-- Jacket lapels -->
+  <path d="M 72 170 L 82 158 L 100 170 L 118 158 L 128 170 L 100 163 Z" fill="#112a1a"/>
+  <path d="M 84 158 Q 100 168 116 158" stroke="#22c55e" stroke-width="1" fill="none" opacity="0.7"/>
+
+  <!-- Neck -->
+  <rect x="89" y="144" width="22" height="20" rx="5" fill="#e8c8a8"/>
+
+  <!-- Head -->
+  <ellipse cx="100" cy="115" rx="34" ry="36" fill="#f0d0b0"/>
+  <!-- Ears -->
+  <ellipse cx="66" cy="117" rx="6" ry="8" fill="#e0be9a"/>
+  <ellipse cx="134" cy="117" rx="6" ry="8" fill="#e0be9a"/>
+  <ellipse cx="67" cy="117" rx="3.5" ry="5.5" fill="#eac8a4"/>
+  <ellipse cx="133" cy="117" rx="3.5" ry="5.5" fill="#eac8a4"/>
+
+  <!-- Hair - long wavy, warm brown with green shimmer streaks -->
+  <path d="M 66 108 Q 64 68 100 62 Q 136 68 134 108 Q 126 80 100 77 Q 74 80 66 108 Z" fill="#3d2010"/>
+  <!-- Wavy side locks -->
+  <path d="M 66 108 Q 58 126 60 150 Q 64 155 68 148 Q 66 132 70 120 Z" fill="#3d2010"/>
+  <path d="M 134 108 Q 142 126 140 150 Q 136 155 132 148 Q 134 132 130 120 Z" fill="#3d2010"/>
+  <!-- Green shimmer streaks -->
+  <path d="M 72 90 Q 74 78 80 74" stroke="#22c55e" stroke-width="2" fill="none" opacity="0.55"/>
+  <path d="M 120 74 Q 126 78 128 90" stroke="#22c55e" stroke-width="2" fill="none" opacity="0.55"/>
+  <!-- Hair top curl -->
+  <path d="M 84 66 Q 100 58 116 66 Q 100 62 84 66 Z" fill="#4a2a16"/>
+  <!-- Hair part highlight -->
+  <path d="M 95 68 Q 100 62 105 68" stroke="#5a3a20" stroke-width="2" fill="none" opacity="0.5"/>
+
+  <!-- Eyebrows - soft, gently arched -->
+  <path d="M 80 104 Q 87 101 94 103" stroke="#3d2010" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M 106 103 Q 113 101 120 104" stroke="#3d2010" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Eyes - warm green -->
+  <ellipse cx="88" cy="113" rx="6" ry="6.5" fill="#fff"/>
+  <ellipse cx="112" cy="113" rx="6" ry="6.5" fill="#fff"/>
+  <circle cx="88" cy="113" r="4" fill="#2d8050"/>
+  <circle cx="112" cy="113" r="4" fill="#2d8050"/>
+  <circle cx="89" cy="111" r="1.5" fill="rgba(255,255,255,0.7)"/>
+  <circle cx="113" cy="111" r="1.5" fill="rgba(255,255,255,0.7)"/>
+
+  <!-- Nose -->
+  <path d="M 100 119 Q 97 127 95 129 Q 100 132 105 129 Q 103 127 100 119" fill="#c89870" opacity="0.75"/>
+
+  <!-- Mouth - gentle smile -->
+  <path d="M 90 138 Q 100 146 110 138" stroke="#9a4828" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M 93 138 Q 100 142 107 138" stroke="#e89070" stroke-width="1" fill="none" opacity="0.5"/>
+
+  <!-- Small leaf accent in hair -->
+  <path d="M 124 78 Q 130 72 134 76 Q 132 82 126 80 Z" fill="#22c55e" opacity="0.8"/>
+</svg>
