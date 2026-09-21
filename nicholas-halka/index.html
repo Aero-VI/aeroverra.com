@@ -165,6 +165,9 @@
     .callout p { margin: 0; font-size: 0.94rem; }
 
 
+    html { scroll-behavior: smooth; }
+    section[id], h3[id] { scroll-margin-top: 6.5rem; }
+
     /* ─── TOC ─────────────────────────────────────────────── */
     .toc {
       display: flex; flex-wrap: wrap; gap: 0.45rem 0.6rem;
@@ -317,7 +320,7 @@
       </dl>
 
       <!-- ─── ON THIS PAGE ────────────────────────────────── -->
-      <nav class="toc" aria-label="On this page">
+      <div class="toc" role="navigation" aria-label="On this page">
         <span class="toc-label">On this page</span>
         <a href="#security">Security research</a>
         <a href="#software">Software engineering</a>
@@ -328,7 +331,7 @@
         <a href="#open-source">On owning software</a>
         <a href="#philosophy">On adversarial engineering</a>
         <a href="#faq">FAQ</a>
-      </nav>
+      </div>
 
       <!-- ─── SECURITY RESEARCH ───────────────────────────── -->
       <section id="security">
