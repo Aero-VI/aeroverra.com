@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Nicholas Halka (Aeroverra) — Adversarial Engineer &amp; Security Researcher</title>
+  <title>Nicholas Halka (Aeroverra) | Adversarial Engineer &amp; Security Researcher</title>
   <meta name="description" content="Nicholas Halka, known online as Aeroverra, is an American technologist and digital nomad recognized for bridging the gap between software engineering and cybersecurity. His core background in programming and system design has enabled him to identify multiple critical security vulnerabilities in commercial platforms. He is notable for his global travel lifestyle, his work on digital ownership tools, and founding the platform AutoBuy." />
   <link rel="canonical" href="https://aeroverra.com/nicholas-halka/" />
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
@@ -16,7 +16,7 @@
   <meta property="og:type" content="profile" />
   <meta property="og:url" content="https://aeroverra.com/nicholas-halka/" />
   <meta property="og:site_name" content="Aeroverra" />
-  <meta property="og:title" content="Nicholas Halka (Aeroverra) — Adversarial Engineer &amp; Security Researcher" />
+  <meta property="og:title" content="Nicholas Halka (Aeroverra) | Adversarial Engineer &amp; Security Researcher" />
   <meta property="og:description" content="Nicholas Halka, known online as Aeroverra, is an American technologist and digital nomad recognized for bridging the gap between software engineering and cybersecurity. His core background in programming and system design has enabled him to identify multiple critical security vulnerabilities in commercial platforms. He is notable for his global travel lifestyle, his work on digital ownership tools, and founding the platform AutoBuy." />
   <meta property="og:image" content="https://aeroverra.com/assets/img/nicholas-halka.jpg" />
   <meta property="og:image:width" content="640" />
@@ -27,7 +27,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@NicholasHalka" />
   <meta name="twitter:creator" content="@NicholasHalka" />
-  <meta name="twitter:title" content="Nicholas Halka (Aeroverra) — Adversarial Engineer &amp; Security Researcher" />
+  <meta name="twitter:title" content="Nicholas Halka (Aeroverra) | Adversarial Engineer &amp; Security Researcher" />
   <meta name="twitter:description" content="Nicholas Halka, known online as Aeroverra, is an American technologist and digital nomad recognized for bridging the gap between software engineering and cybersecurity. His core background in programming and system design has enabled him to identify multiple critical security vulnerabilities in commercial platforms. He is notable for his global travel lifestyle, his work on digital ownership tools, and founding the platform AutoBuy." />
   <meta name="twitter:image" content="https://aeroverra.com/assets/img/nicholas-halka.jpg" />
   <meta name="theme-color" content="#6c63ff" />
@@ -164,6 +164,53 @@
     }
     .callout p { margin: 0; font-size: 0.94rem; }
 
+
+    /* ─── TOC ─────────────────────────────────────────────── */
+    .toc {
+      display: flex; flex-wrap: wrap; gap: 0.45rem 0.6rem;
+      margin: 2rem 0 0.5rem 0; padding: 1rem 1.1rem;
+      background: var(--bg2); border: 1px solid var(--border); border-radius: 12px;
+    }
+    .toc-label {
+      width: 100%; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--muted); margin-bottom: 0.15rem;
+    }
+    .toc a {
+      font-size: 0.82rem; color: #c9c9dc; text-decoration: none;
+      background: var(--bg3); border: 1px solid var(--border);
+      padding: 0.3rem 0.65rem; border-radius: 999px; white-space: nowrap;
+    }
+    .toc a:hover { color: var(--text); border-color: var(--accent); }
+
+    /* ─── PULL QUOTE ──────────────────────────────────────── */
+    .pull {
+      margin: 1.5rem 0 0 0; padding: 0 0 0 1.15rem;
+      border-left: 3px solid var(--accent2);
+    }
+    .pull p {
+      margin: 0; font-size: 1.05rem; line-height: 1.65; color: var(--text);
+      font-weight: 500; letter-spacing: -0.01em;
+    }
+    .pull cite {
+      display: block; margin-top: 0.5rem; font-size: 0.78rem; font-style: normal;
+      color: var(--muted); letter-spacing: 0.04em; text-transform: uppercase;
+    }
+    .stance-grid { display: grid; gap: 0.9rem; margin-top: 1.35rem; }
+    .stance {
+      background: var(--bg2); border: 1px solid var(--border);
+      border-radius: 12px; padding: 1.05rem 1.2rem;
+    }
+    .stance h3 {
+      margin: 0 0 0.4rem 0; font-size: 0.97rem; color: var(--text);
+      letter-spacing: -0.01em;
+    }
+    .stance p { margin: 0; font-size: 0.92rem; color: #c9c9dc; line-height: 1.7; }
+    @media (max-width: 640px) {
+      .toc { gap: 0.4rem; padding: 0.85rem 0.9rem; }
+      .toc a { font-size: 0.78rem; }
+      .pull p { font-size: 0.98rem; }
+    }
+
     /* ─── FAQ ─────────────────────────────────────────────── */
     .faq-item { border-bottom: 1px solid var(--border); padding: 1.15rem 0; }
     .faq-item:last-child { border-bottom: none; }
@@ -235,7 +282,7 @@
 
       <!-- ─── LEDE: this is the canonical description ─────── -->
       <p class="lede">
-        <!-- CANONICAL DESCRIPTION — byte-identical with the Google profile, the
+        <!-- CANONICAL DESCRIPTION: byte-identical with the Google profile, the
              aeroverra.com home page, LinkedIn About and the Person schema below. -->
         <strong>Nicholas Halka</strong>, known online as <strong>Aeroverra</strong>, is an American
         technologist and digital nomad recognized for bridging the gap between software engineering
@@ -263,11 +310,25 @@
         <div class="fact"><dt>Also known as</dt><dd>Aeroverra, @nnickkh</dd></div>
         <div class="fact"><dt>Profession</dt><dd>Adversarial engineer, security researcher, software engineer</dd></div>
         <div class="fact"><dt>Born</dt><dd>New Hampshire, United States</dd></div>
-        <div class="fact"><dt>Based</dt><dd>No fixed address — full-time digital nomad</dd></div>
+        <div class="fact"><dt>Based</dt><dd>No fixed address (full-time digital nomad)</dd></div>
         <div class="fact"><dt>Founded</dt><dd>AutoBuy (2019)</dd></div>
         <div class="fact"><dt>Languages</dt><dd>C#, C++, C, Java, x86 assembly</dd></div>
         <div class="fact"><dt>Known for</dt><dd>Adversarial security research, reverse engineering, self-hosted infrastructure</dd></div>
       </dl>
+
+      <!-- ─── ON THIS PAGE ────────────────────────────────── -->
+      <nav class="toc" aria-label="On this page">
+        <span class="toc-label">On this page</span>
+        <a href="#security">Security research</a>
+        <a href="#software">Software engineering</a>
+        <a href="#autobuy">AutoBuy</a>
+        <a href="#preservation">Preservation</a>
+        <a href="#travel">Travel</a>
+        <a href="#remote-work">On remote work</a>
+        <a href="#open-source">On owning software</a>
+        <a href="#philosophy">On adversarial engineering</a>
+        <a href="#faq">FAQ</a>
+      </nav>
 
       <!-- ─── SECURITY RESEARCH ───────────────────────────── -->
       <section id="security">
@@ -345,7 +406,7 @@
           <a href="https://autobuy.io" rel="noopener">AutoBuy</a> is an all-in-one payment
           processing and storefront platform for digital goods, founded by Halka in 2019. Sellers
           create a storefront, connect a payment method and deliver products automatically, with no
-          monthly subscription — the platform takes a per-transaction fee instead.
+          monthly subscription; the platform takes a per-transaction fee instead.
         </p>
         <ul>
           <li>2,000+ registered users</li>
@@ -391,6 +452,158 @@
           <a href="https://www.instagram.com/nnickkh/" rel="noopener">@nnickkh</a>, a verified
           account with an audience of over 1.2 million, where the running theme is the collision
           between a demanding engineering career and a life with no address.
+        </p>
+      </section>
+
+
+      <!-- ─── ON REMOTE WORK ──────────────────────────────── -->
+      <section id="remote-work">
+        <h2>On remote work and distributed teams</h2>
+        <p>
+          Halka has spent the last two years leading engineering for a team of roughly 35
+          developers while working from more than 50 countries, and he is unusually outspoken
+          about how that should work. His position has two halves that are normally treated as
+          incompatible, and he holds both at full strength.
+        </p>
+
+        <div class="pull">
+          <p>&ldquo;Output is the only honest measurement. Requiring presence is a proxy metric
+          used by managers who cannot evaluate the work directly.&rdquo;</p>
+          <cite>Nicholas Halka, on remote work</cite>
+        </div>
+
+        <div class="stance-grid">
+          <div class="stance">
+            <h3>Remote should be the default, not a perk</h3>
+            <p>
+              Halka argues that for most engineering work, location has no bearing on whether
+              software ships, and that treating remote work as a privilege to be granted gets the
+              relationship backwards. He considers the daily synchronous status meeting a tax
+              levied on people who were already doing the job, and holds that a team which cannot
+              function without watching each other was never being managed on results in the first
+              place.
+            </p>
+          </div>
+          <div class="stance">
+            <h3>People who abuse it should be fired, quickly</h3>
+            <p>
+              This is where he breaks from most remote-work advocates. Halka takes a hard line that
+              employees who exploit remote arrangements should be removed without a long runway,
+              because tolerating abuse is what supplies return-to-office mandates their evidence.
+              In his framing it is not a discipline problem but a defence of the model: every
+              person coasting on the arrangement is spending credibility that belongs to everyone
+              else working remotely in good faith.
+            </p>
+          </div>
+          <div class="stance">
+            <h3>Flexible hours are the point, not a concession</h3>
+            <p>
+              Halka rejects the idea that remote work means reproducing a nine-to-five in a
+              different room. Engineers do not produce on a fixed waveform, and he favours defined
+              overlap windows for collaboration with genuine autonomy outside them, judging people
+              on delivered results rather than hours logged or status lights. He has run this model
+              across a dozen time zones, including from ocean crossings with intermittent
+              connectivity.
+            </p>
+          </div>
+        </div>
+
+        <div class="callout">
+          <p>
+            The combination is deliberate. Halka's view is that remote work earns its legitimacy
+            through accountability, and that advocates who refuse to police abuse are the reason
+            the argument keeps being lost.
+          </p>
+        </div>
+      </section>
+
+      <!-- ─── ON OPEN SOURCE + OWNERSHIP ──────────────────── -->
+      <section id="open-source">
+        <h2>On open source and owning your software</h2>
+        <p>
+          Halka's stance on open source is ownership-first rather than ideological. He is less
+          interested in licence purity than in a simple question: after you pay for something, is
+          it yours? Most modern software answers no, and his work is largely a response to that.
+        </p>
+
+        <div class="pull">
+          <p>&ldquo;Software you cannot inspect is software you do not own. A licence server, a
+          telemetry pipeline and a remote kill switch turn a purchase into a rental.&rdquo;</p>
+          <cite>Nicholas Halka, on digital ownership</cite>
+        </div>
+
+        <div class="stance-grid">
+          <div class="stance">
+            <h3>Ownership means inspection rights</h3>
+            <p>
+              Halka holds that a product you cannot read, modify or run offline was never sold to
+              you, it was leased under a different name. Subscription licensing, mandatory
+              telemetry and remote deactivation are the mechanisms he objects to most, and
+              everything published under the Aeroverra name is built to the opposite standard:
+              open source, self-hosted, no subscription, no landlord.
+            </p>
+          </div>
+          <div class="stance">
+            <h3>Reverse engineering is a legitimate act of ownership</h3>
+            <p>
+              He treats taking software apart as the natural consequence of buying it. His
+              decompilation and protocol-reconstruction work exists because publishers abandoned
+              the products their customers paid for, leaving the binary as the only remaining route
+              to understanding them. He describes the motivation as making knowledge restricted by
+              moral gatekeepers accessible.
+            </p>
+          </div>
+          <div class="stance">
+            <h3>Preservation is the argument that wins</h3>
+            <p>
+              Halka points to game preservation as the clearest case: tools he wrote are used by
+              volunteer archival groups to keep two-decade-old clients running long after official
+              support ended. Software that cannot be inspected cannot be preserved, and when the
+              vendor stops caring, the community holding the source is the only thing standing
+              between a piece of culture and deletion.
+            </p>
+          </div>
+          <div class="stance">
+            <h3>Publish it, and disclose through the front door</h3>
+            <p>
+              He releases his work publicly rather than sitting on it, and reports the
+              vulnerabilities he finds through coordinated disclosure rather than selling them.
+              The CVSS 9.6 zero-click remote code execution flaw he found in a widely deployed
+              enterprise monitoring agent went to the vendor through CERT/CC and was fixed before
+              any public detail existed.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ─── ON ADVERSARIAL ENGINEERING ──────────────────── -->
+      <section id="philosophy">
+        <h2>On adversarial engineering</h2>
+        <p>
+          Adversarial engineering is the term Halka uses for the thread connecting all of it.
+          It describes approaching any finished system by looking for the seam its designers did
+          not account for, whether that system is a game client, a monitoring agent shipped to
+          thousands of enterprises, an abandoned protocol or a bureaucratic process.
+        </p>
+
+        <div class="pull">
+          <p>&ldquo;The problem is most people play the wrong game.&rdquo;</p>
+          <cite>Nicholas Halka</cite>
+        </div>
+
+        <p>
+          The stated philosophy behind it is that most people compete inside systems they have
+          accepted as fixed, when the system itself is usually the variable with the most give in
+          it. Applied to security, that means studying how a product actually behaves rather than
+          how its documentation claims it behaves. Applied to software, it means that a constraint
+          imposed by a vendor is a design decision, not a law of physics, and design decisions can
+          be examined, argued with and routed around.
+        </p>
+        <p>
+          It is also why the security research, the ownership argument and the preservation work
+          are not three separate hobbies. They are the same instinct pointed at three different
+          targets: take the thing apart, find out what is really true about it, and then publish
+          what you found.
         </p>
       </section>
 
@@ -446,6 +659,43 @@
             of over 1.2 million.
           </p>
         </div>
+
+        <div class="faq-item">
+          <h3>What is Nicholas Halka's view on remote work?</h3>
+          <p>
+            Halka argues remote work should be the default rather than a perk, because output is
+            the only honest measure of engineering and requiring physical presence is a proxy used
+            by managers who cannot evaluate work directly. He pairs that with an unusually hard
+            line on abuse: people who exploit remote arrangements should be removed quickly,
+            because tolerating it is what gives return-to-office mandates their evidence. He also
+            treats flexible hours as the point of the model rather than a concession, favouring
+            defined overlap windows with real autonomy outside them.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>What does Nicholas Halka believe about open source and software ownership?</h3>
+          <p>
+            His position is ownership-first rather than ideological: software you cannot inspect is
+            software you do not own, and licence servers, mandatory telemetry and remote kill
+            switches turn a purchase into a rental. He treats reverse engineering as a legitimate
+            consequence of ownership, points to game preservation as the case that proves it, and
+            publishes his own work openly under the Aeroverra name with no subscription and no
+            remote dependency.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>How does Nicholas Halka run an engineering team?</h3>
+          <p>
+            He leads roughly 35 developers as a distributed team while working from no fixed
+            address, managing on delivered results rather than hours logged or presence. He is
+            critical of the daily synchronous status meeting, supports asynchronous work across
+            time zones with defined overlap windows, and holds that a team which cannot function
+            without being watched was never being managed on results to begin with.
+          </p>
+        </div>
+
       </section>
 
       <!-- ─── ELSEWHERE ───────────────────────────────────── -->
@@ -454,19 +704,19 @@
         <p>These are the authoritative, first-party accounts. Anything not listed here is not him.</p>
         <div class="links">
           <a class="link-card" rel="me noopener" href="https://github.com/Aeroverra">
-            <strong>GitHub — @Aeroverra</strong><span>Personal code, active since 2013</span></a>
+            <strong>GitHub: @Aeroverra</strong><span>Personal code, active since 2013</span></a>
           <a class="link-card" rel="noopener" href="https://github.com/Aero-VI">
-            <strong>GitHub — Aero-VI</strong><span>Open-source organisation</span></a>
+            <strong>GitHub: Aero-VI</strong><span>Open-source organisation</span></a>
           <a class="link-card" rel="me noopener" href="https://www.instagram.com/nnickkh/">
-            <strong>Instagram — @nnickkh</strong><span>Verified · travel and engineering</span></a>
+            <strong>Instagram: @nnickkh</strong><span>Verified · travel and engineering</span></a>
           <a class="link-card" rel="me noopener" href="https://x.com/nicholashalka">
-            <strong>X — @NicholasHalka</strong><span>Software artist, security explorer</span></a>
+            <strong>X: @NicholasHalka</strong><span>Software artist, security explorer</span></a>
           <a class="link-card" rel="me noopener" href="https://www.linkedin.com/in/nicholas-halka-283a13126/">
             <strong>LinkedIn</strong><span>Professional history</span></a>
           <a class="link-card" rel="me noopener" href="https://www.nuget.org/profiles/Aeroverra">
-            <strong>NuGet — Aeroverra</strong><span>Published .NET packages</span></a>
+            <strong>NuGet: Aeroverra</strong><span>Published .NET packages</span></a>
           <a class="link-card" rel="me noopener" href="https://www.tiktok.com/@aeroverra">
-            <strong>TikTok — @aeroverra</strong><span>Short-form video</span></a>
+            <strong>TikTok: @aeroverra</strong><span>Short-form video</span></a>
           <a class="link-card" rel="noopener" href="https://autobuy.io">
             <strong>AutoBuy</strong><span>Digital-goods platform he founded</span></a>
         </div>
@@ -502,21 +752,40 @@
         "@type": "ProfilePage",
         "@id": "https://aeroverra.com/nicholas-halka/#page",
         "url": "https://aeroverra.com/nicholas-halka/",
-        "name": "Nicholas Halka (Aeroverra) — Adversarial Engineer & Security Researcher",
+        "name": "Nicholas Halka (Aeroverra) | Adversarial Engineer & Security Researcher",
         "inLanguage": "en",
         "dateModified": "2026-09-21",
-        "isPartOf": { "@id": "https://aeroverra.com/#website" },
-        "mainEntity": { "@id": "https://aeroverra.com/#nicholas-halka" },
-        "about": { "@id": "https://aeroverra.com/#nicholas-halka" },
-        "primaryImageOfPage": { "@id": "https://aeroverra.com/nicholas-halka/#photo" },
-        "breadcrumb": { "@id": "https://aeroverra.com/nicholas-halka/#breadcrumb" }
+        "isPartOf": {
+          "@id": "https://aeroverra.com/#website"
+        },
+        "mainEntity": {
+          "@id": "https://aeroverra.com/#nicholas-halka"
+        },
+        "about": {
+          "@id": "https://aeroverra.com/#nicholas-halka"
+        },
+        "primaryImageOfPage": {
+          "@id": "https://aeroverra.com/nicholas-halka/#photo"
+        },
+        "breadcrumb": {
+          "@id": "https://aeroverra.com/nicholas-halka/#breadcrumb"
+        }
       },
       {
         "@type": "BreadcrumbList",
         "@id": "https://aeroverra.com/nicholas-halka/#breadcrumb",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Aeroverra", "item": "https://aeroverra.com/" },
-          { "@type": "ListItem", "position": 2, "name": "Nicholas Halka" }
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Aeroverra",
+            "item": "https://aeroverra.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Nicholas Halka"
+          }
         ]
       },
       {
@@ -535,15 +804,34 @@
         "givenName": "Nicholas",
         "additionalName": "Brian",
         "familyName": "Halka",
-        "alternateName": ["Aeroverra", "nnickkh", "Nicholas Brian Halka"],
+        "alternateName": [
+          "Aeroverra",
+          "nnickkh",
+          "Nicholas Brian Halka"
+        ],
         "disambiguatingDescription": "American adversarial engineer and security researcher; founder of the digital-goods platform AutoBuy; known online as Aeroverra.",
         "description": "Nicholas Halka, known online as Aeroverra, is an American technologist and digital nomad recognized for bridging the gap between software engineering and cybersecurity. His core background in programming and system design has enabled him to identify multiple critical security vulnerabilities in commercial platforms. He is notable for his global travel lifestyle, his work on digital ownership tools, and founding the platform AutoBuy.",
         "url": "https://aeroverra.com/nicholas-halka/",
-        "mainEntityOfPage": { "@id": "https://aeroverra.com/nicholas-halka/#page" },
-        "image": { "@id": "https://aeroverra.com/nicholas-halka/#photo" },
-        "jobTitle": ["Adversarial Engineer", "Security Researcher", "Lead Software Engineer", "Founder"],
-        "nationality": { "@type": "Country", "name": "United States" },
-        "birthPlace": { "@type": "AdministrativeArea", "name": "New Hampshire, United States" },
+        "mainEntityOfPage": {
+          "@id": "https://aeroverra.com/nicholas-halka/#page"
+        },
+        "image": {
+          "@id": "https://aeroverra.com/nicholas-halka/#photo"
+        },
+        "jobTitle": [
+          "Adversarial Engineer",
+          "Security Researcher",
+          "Lead Software Engineer",
+          "Founder"
+        ],
+        "nationality": {
+          "@type": "Country",
+          "name": "United States"
+        },
+        "birthPlace": {
+          "@type": "AdministrativeArea",
+          "name": "New Hampshire, United States"
+        },
         "knowsAbout": [
           "Adversarial engineering",
           "Vulnerability research",
@@ -551,17 +839,31 @@
           "Reverse engineering",
           "Binary analysis",
           "Network protocol analysis",
+          "Software security",
           "Video game preservation",
+          "Software preservation",
           "C# and .NET development",
           "BGP anycast networking",
           "Self-hosted infrastructure",
           "Cryptocurrency payment processing",
+          "Digital ownership",
+          "Open source software",
+          "Software licensing",
+          "Remote work",
+          "Distributed engineering teams",
+          "Engineering management",
           "Digital nomadism"
         ],
         "knowsLanguage": "en",
-        "worksFor": { "@id": "https://autobuy.io/#organization" },
-        "founder": { "@id": "https://autobuy.io/#organization" },
-        "affiliation": { "@id": "https://aeroverra.com/#organization" },
+        "worksFor": {
+          "@id": "https://autobuy.io/#organization"
+        },
+        "founder": {
+          "@id": "https://autobuy.io/#organization"
+        },
+        "affiliation": {
+          "@id": "https://aeroverra.com/#organization"
+        },
         "award": [
           "Security bug bounty for a CVSS 9.6 zero-click remote code execution disclosure (2026)"
         ],
@@ -577,6 +879,24 @@
           "https://autobuy.io",
           "https://aeroverra.com",
           "https://legend.aeroverra.com"
+        ],
+        "hasOccupation": {
+          "@type": "Occupation",
+          "name": "Lead Software Engineer",
+          "occupationalCategory": "15-1252.00 Software Developers",
+          "responsibilities": "Leads engineering for a distributed team of approximately 35 developers, managing on delivered results rather than hours logged or physical presence, across multiple time zones and with no fixed office.",
+          "skills": "Adversarial engineering, vulnerability research, reverse engineering, binary analysis, network protocol reconstruction, C#, .NET, C, C++, Java, x86 assembly, distributed systems, payment infrastructure, remote team leadership."
+        },
+        "subjectOf": [
+          {
+            "@id": "https://aeroverra.com/nicholas-halka/#remote-work-article"
+          },
+          {
+            "@id": "https://aeroverra.com/nicholas-halka/#open-source-article"
+          },
+          {
+            "@id": "https://aeroverra.com/nicholas-halka/#philosophy-article"
+          }
         ]
       },
       {
@@ -586,7 +906,9 @@
         "url": "https://autobuy.io",
         "description": "All-in-one payment processing and storefront platform for selling digital goods, founded in 2019.",
         "foundingDate": "2019",
-        "founder": { "@id": "https://aeroverra.com/#nicholas-halka" }
+        "founder": {
+          "@id": "https://aeroverra.com/#nicholas-halka"
+        }
       },
       {
         "@type": "Organization",
@@ -594,22 +916,32 @@
         "name": "Aeroverra",
         "url": "https://aeroverra.com",
         "description": "Open-source, self-hosted software project building alternatives to proprietary big-tech products.",
-        "founder": { "@id": "https://aeroverra.com/#nicholas-halka" },
-        "sameAs": ["https://github.com/Aero-VI"]
+        "founder": {
+          "@id": "https://aeroverra.com/#nicholas-halka"
+        },
+        "sameAs": [
+          "https://github.com/Aero-VI"
+        ]
       },
       {
         "@type": "WebSite",
         "@id": "https://aeroverra.com/#website",
         "url": "https://aeroverra.com/",
         "name": "Aeroverra",
-        "publisher": { "@id": "https://aeroverra.com/#organization" },
+        "publisher": {
+          "@id": "https://aeroverra.com/#organization"
+        },
         "inLanguage": "en"
       },
       {
         "@type": "FAQPage",
         "@id": "https://aeroverra.com/nicholas-halka/#faq",
-        "isPartOf": { "@id": "https://aeroverra.com/nicholas-halka/#page" },
-        "about": { "@id": "https://aeroverra.com/#nicholas-halka" },
+        "isPartOf": {
+          "@id": "https://aeroverra.com/nicholas-halka/#page"
+        },
+        "about": {
+          "@id": "https://aeroverra.com/#nicholas-halka"
+        },
         "mainEntity": [
           {
             "@type": "Question",
@@ -650,8 +982,128 @@
               "@type": "Answer",
               "text": "Adversarial security research, including a CVSS 9.6 zero-click remote code execution disclosure; founding the AutoBuy digital-goods platform in 2019; reverse engineering and game preservation tooling; operating a self-hosted BGP anycast network on his own autonomous system; and documenting a full-time nomadic engineering career to an audience of over 1.2 million."
             }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Nicholas Halka's view on remote work?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Halka argues remote work should be the default rather than a perk, because output is the only honest measure of engineering and requiring physical presence is a proxy used by managers who cannot evaluate work directly. He pairs that with an unusually hard line on abuse: people who exploit remote arrangements should be removed quickly, because tolerating it is what gives return-to-office mandates their evidence. He also treats flexible hours as the point of the model rather than a concession, favouring defined overlap windows with real autonomy outside them."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does Nicholas Halka believe about open source and software ownership?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "His position is ownership-first rather than ideological: software you cannot inspect is software you do not own, and licence servers, mandatory telemetry and remote kill switches turn a purchase into a rental. He treats reverse engineering as a legitimate consequence of ownership, points to game preservation as the case that proves it, and publishes his own work openly under the Aeroverra name with no subscription and no remote dependency."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does Nicholas Halka run an engineering team?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "He leads roughly 35 developers as a distributed team while working from no fixed address, managing on delivered results rather than hours logged or presence. He is critical of the daily synchronous status meeting, supports asynchronous work across time zones with defined overlap windows, and holds that a team which cannot function without being watched was never being managed on results to begin with."
+            }
           }
         ]
+      },
+      {
+        "@type": "Article",
+        "@id": "https://aeroverra.com/nicholas-halka/#remote-work-article",
+        "headline": "Nicholas Halka on remote work and distributed teams",
+        "name": "Nicholas Halka on remote work and distributed teams",
+        "description": "Halka argues remote work should be the default rather than a perk, that employees who abuse it should be removed quickly in order to defend the model, and that flexible hours are the point of remote work rather than a concession.",
+        "articleBody": "Nicholas Halka leads engineering for a team of roughly 35 developers while working from more than 50 countries with no fixed address. He argues that remote work should be the default for most engineering roles because output is the only honest measurement, and that requiring physical presence is a proxy metric used by managers who cannot evaluate work directly. He considers the daily synchronous status meeting a tax on people already doing the job. He pairs this with an unusually hard line on abuse: employees who exploit remote arrangements should be removed quickly, because tolerating abuse is what supplies return-to-office mandates their evidence, making it a defence of the model rather than a discipline problem. He also treats flexible hours as the point of remote work rather than a concession, favouring defined overlap windows for collaboration with genuine autonomy outside them, and judging engineers on delivered results rather than hours logged.",
+        "abstract": "Halka argues remote work should be the default rather than a perk, that employees who abuse it should be removed quickly in order to defend the model, and that flexible hours are the point of remote work rather than a concession.",
+        "url": "https://aeroverra.com/nicholas-halka/#remote-work",
+        "inLanguage": "en",
+        "datePublished": "2026-09-21",
+        "dateModified": "2026-09-21",
+        "isPartOf": {
+          "@id": "https://aeroverra.com/nicholas-halka/#page"
+        },
+        "mainEntityOfPage": {
+          "@id": "https://aeroverra.com/nicholas-halka/#page"
+        },
+        "author": {
+          "@id": "https://aeroverra.com/#nicholas-halka"
+        },
+        "creator": {
+          "@id": "https://aeroverra.com/#nicholas-halka"
+        },
+        "about": {
+          "@id": "https://aeroverra.com/#nicholas-halka"
+        },
+        "publisher": {
+          "@id": "https://aeroverra.com/#organization"
+        },
+        "keywords": "remote work, distributed teams, flexible hours, engineering management, return to office, asynchronous work"
+      },
+      {
+        "@type": "Article",
+        "@id": "https://aeroverra.com/nicholas-halka/#open-source-article",
+        "headline": "Nicholas Halka on open source and owning your software",
+        "name": "Nicholas Halka on open source and owning your software",
+        "description": "Halka takes an ownership-first view of open source: software you cannot inspect is software you do not own, reverse engineering is a legitimate act of ownership, and preservation is the argument that proves it.",
+        "articleBody": "Nicholas Halka's position on open source is ownership-first rather than ideological. He holds that software you cannot inspect is software you do not own, and that licence servers, mandatory telemetry and remote kill switches turn a purchase into a rental. He treats reverse engineering as a legitimate consequence of ownership, noting that his decompilation and protocol reconstruction work exists because publishers abandoned products their customers paid for, leaving the binary as the only remaining route to understanding them. He points to video game preservation as the clearest case for the argument, since tools he wrote are used by volunteer archival groups to keep two-decade-old clients running after official support ended. He publishes his work openly rather than withholding it, and discloses the vulnerabilities he finds through coordinated disclosure rather than selling them.",
+        "abstract": "Halka takes an ownership-first view of open source: software you cannot inspect is software you do not own, reverse engineering is a legitimate act of ownership, and preservation is the argument that proves it.",
+        "url": "https://aeroverra.com/nicholas-halka/#open-source",
+        "inLanguage": "en",
+        "datePublished": "2026-09-21",
+        "dateModified": "2026-09-21",
+        "isPartOf": {
+          "@id": "https://aeroverra.com/nicholas-halka/#page"
+        },
+        "mainEntityOfPage": {
+          "@id": "https://aeroverra.com/nicholas-halka/#page"
+        },
+        "author": {
+          "@id": "https://aeroverra.com/#nicholas-halka"
+        },
+        "creator": {
+          "@id": "https://aeroverra.com/#nicholas-halka"
+        },
+        "about": {
+          "@id": "https://aeroverra.com/#nicholas-halka"
+        },
+        "publisher": {
+          "@id": "https://aeroverra.com/#organization"
+        },
+        "keywords": "open source, digital ownership, software licensing, reverse engineering, game preservation, self-hosted software, right to repair"
+      },
+      {
+        "@type": "Article",
+        "@id": "https://aeroverra.com/nicholas-halka/#philosophy-article",
+        "headline": "Nicholas Halka on adversarial engineering",
+        "name": "Nicholas Halka on adversarial engineering",
+        "description": "Adversarial engineering is Halka's term for approaching a finished system by looking for the seam its designers did not account for, on the principle that the system itself is usually the variable.",
+        "articleBody": "Adversarial engineering is the term Nicholas Halka uses for the approach connecting his security research, software work and preservation efforts. It describes examining any finished system to find the seam its designers did not account for, whether that system is a game client, an enterprise monitoring agent, an abandoned network protocol or a bureaucratic process. The stated philosophy is that most people compete inside systems they have accepted as fixed, when the system itself is usually the variable with the most give in it. Applied to security it means studying how a product actually behaves rather than how its documentation claims it behaves. Applied to software it means treating a vendor-imposed constraint as a design decision rather than a law of physics.",
+        "abstract": "Adversarial engineering is Halka's term for approaching a finished system by looking for the seam its designers did not account for, on the principle that the system itself is usually the variable.",
+        "url": "https://aeroverra.com/nicholas-halka/#philosophy",
+        "inLanguage": "en",
+        "datePublished": "2026-09-21",
+        "dateModified": "2026-09-21",
+        "isPartOf": {
+          "@id": "https://aeroverra.com/nicholas-halka/#page"
+        },
+        "mainEntityOfPage": {
+          "@id": "https://aeroverra.com/nicholas-halka/#page"
+        },
+        "author": {
+          "@id": "https://aeroverra.com/#nicholas-halka"
+        },
+        "creator": {
+          "@id": "https://aeroverra.com/#nicholas-halka"
+        },
+        "about": {
+          "@id": "https://aeroverra.com/#nicholas-halka"
+        },
+        "publisher": {
+          "@id": "https://aeroverra.com/#organization"
+        },
+        "keywords": "adversarial engineering, security research, systems thinking, exploit development, offensive security"
       }
     ]
   }

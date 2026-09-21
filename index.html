@@ -644,6 +644,17 @@
       footer .container { flex-direction: column; align-items: flex-start; gap: 0.75rem; }
     }
   
+
+    /* ─── founder: positions ─────────────────────────────────── */
+    .positions { display: grid; gap: 0.85rem; margin-top: 1.1rem; }
+    .position {
+      background: var(--bg); border: 1px solid var(--border);
+      border-left: 3px solid var(--accent2);
+      border-radius: 0 10px 10px 0; padding: 0.95rem 1.1rem;
+    }
+    .position strong { display:block; color: var(--text); font-size: 0.93rem; margin-bottom: 0.3rem; }
+    .position span { display:block; color: var(--muted); font-size: 0.875rem; line-height: 1.7; }
+
     /* ─── founder: first-party link grid ─────────────────────── */
     .me-links {
       display: grid;
@@ -988,7 +999,7 @@
             Adversarial Engineer &middot; Security Researcher &middot; Founder of AutoBuy &middot; Digital Nomad
           </p>
 
-          <!-- CANONICAL DESCRIPTION — keep byte-identical with the Google profile,
+          <!-- CANONICAL DESCRIPTION: keep byte-identical with the Google profile,
                LinkedIn About, GitHub README and the Person schema below. -->
           <p class="canon">
             <strong style="color:var(--text);">Nicholas Halka</strong>, known online as
@@ -1026,6 +1037,40 @@
             <strong style="color:var(--text);">1.2&nbsp;million</strong> on Instagram.
           </p>
 
+
+          <h4 id="positions" style="margin-top:2rem; font-size:0.78rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:var(--muted);">
+            Where he stands
+          </h4>
+          <div class="positions">
+            <div class="position">
+              <strong><a href="/nicholas-halka/#remote-work" style="color:var(--text); text-decoration:none;">Remote work should be the default, and abuse of it should be fired</a></strong>
+              <span>
+                Output is the only honest measurement, and requiring presence is a proxy metric used
+                by managers who cannot evaluate the work directly. He holds the other half just as
+                hard: people who exploit remote arrangements should be removed quickly, because
+                tolerating it is what hands return-to-office mandates their evidence. Flexible hours
+                are the point of the model, not a concession to it.
+              </span>
+            </div>
+            <div class="position">
+              <strong><a href="/nicholas-halka/#open-source" style="color:var(--text); text-decoration:none;">Software you cannot inspect is software you do not own</a></strong>
+              <span>
+                Licence servers, mandatory telemetry and remote kill switches turn a purchase into a
+                rental. Reverse engineering is the legitimate consequence of ownership, preservation
+                is the argument that proves it, and everything he publishes is open source,
+                self-hosted, no subscription, no landlord.
+              </span>
+            </div>
+            <div class="position">
+              <strong><a href="/nicholas-halka/#philosophy" style="color:var(--text); text-decoration:none;">Most people compete inside systems they should be rewriting</a></strong>
+              <span>
+                Adversarial engineering means examining a finished system for the seam its designers
+                did not account for, then reporting it or rebuilding around it. A vendor-imposed
+                constraint is a design decision, not a law of physics.
+              </span>
+            </div>
+          </div>
+
           <h4 style="margin-top:2rem; font-size:0.78rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:var(--muted);">
             First-party accounts
           </h4>
@@ -1034,21 +1079,21 @@
           </p>
           <div class="me-links">
             <a class="me-link" rel="me noopener" href="https://www.instagram.com/nnickkh/">
-              <strong>Instagram &mdash; @nnickkh</strong><span>Verified &middot; travel and engineering</span></a>
+              <strong>Instagram: @nnickkh</strong><span>Verified &middot; travel and engineering</span></a>
             <a class="me-link" rel="me noopener" href="https://www.linkedin.com/in/nicholas-halka-283a13126/">
               <strong>LinkedIn</strong><span>Professional history</span></a>
             <a class="me-link" rel="me noopener" href="https://github.com/Aeroverra">
-              <strong>GitHub &mdash; @Aeroverra</strong><span>Personal code, active since 2013</span></a>
+              <strong>GitHub: @Aeroverra</strong><span>Personal code, active since 2013</span></a>
             <a class="me-link" rel="noopener" href="https://github.com/Aero-VI">
-              <strong>GitHub &mdash; Aero-VI</strong><span>Open-source organisation</span></a>
+              <strong>GitHub: Aero-VI</strong><span>Open-source organisation</span></a>
             <a class="me-link" rel="me noopener" href="https://x.com/nicholashalka">
-              <strong>X &mdash; @NicholasHalka</strong><span>Software artist, security explorer</span></a>
+              <strong>X: @NicholasHalka</strong><span>Software artist, security explorer</span></a>
             <a class="me-link" rel="noopener" href="https://autobuy.io">
               <strong>AutoBuy</strong><span>Digital-goods platform, founded 2019</span></a>
             <a class="me-link" rel="me noopener" href="https://www.nuget.org/profiles/Aeroverra">
-              <strong>NuGet &mdash; Aeroverra</strong><span>Published .NET packages</span></a>
+              <strong>NuGet: Aeroverra</strong><span>Published .NET packages</span></a>
             <a class="me-link" rel="me noopener" href="https://www.tiktok.com/@aeroverra">
-              <strong>TikTok &mdash; @aeroverra</strong><span>Short-form video</span></a>
+              <strong>TikTok: @aeroverra</strong><span>Short-form video</span></a>
           </div>
 
           <p style="margin-top:1.75rem;">
@@ -1121,7 +1166,9 @@
         "name": "Aeroverra",
         "description": "Aeroverra builds open-source, self-hosted software so you can take back control of your data, your services, and your digital life.",
         "inLanguage": "en",
-        "publisher": { "@id": "https://aeroverra.com/#organization" }
+        "publisher": {
+          "@id": "https://aeroverra.com/#organization"
+        }
       },
       {
         "@type": "Organization",
@@ -1130,22 +1177,62 @@
         "url": "https://aeroverra.com/",
         "description": "Open-source, self-hosted software project building alternatives to proprietary big-tech products.",
         "email": "hello@aeroverra.com",
-        "founder": { "@id": "https://aeroverra.com/#nicholas-halka" },
-        "sameAs": ["https://github.com/Aero-VI"]
+        "founder": {
+          "@id": "https://aeroverra.com/#nicholas-halka"
+        },
+        "sameAs": [
+          "https://github.com/Aero-VI"
+        ]
       },
       {
         "@type": "Person",
         "@id": "https://aeroverra.com/#nicholas-halka",
         "name": "Nicholas Halka",
-        "alternateName": ["Aeroverra", "nnickkh", "Nicholas Brian Halka"],
+        "alternateName": [
+          "Aeroverra",
+          "nnickkh",
+          "Nicholas Brian Halka"
+        ],
         "url": "https://aeroverra.com/nicholas-halka/",
         "mainEntityOfPage": "https://aeroverra.com/nicholas-halka/",
         "image": "https://aeroverra.com/assets/img/nicholas-halka.jpg",
-        "jobTitle": ["Adversarial Engineer", "Security Researcher", "Lead Software Engineer", "Founder"],
+        "jobTitle": [
+          "Adversarial Engineer",
+          "Security Researcher",
+          "Lead Software Engineer",
+          "Founder"
+        ],
         "description": "Nicholas Halka, known online as Aeroverra, is an American technologist and digital nomad recognized for bridging the gap between software engineering and cybersecurity. His core background in programming and system design has enabled him to identify multiple critical security vulnerabilities in commercial platforms. He is notable for his global travel lifestyle, his work on digital ownership tools, and founding the platform AutoBuy.",
-        "knowsAbout": ["Adversarial engineering", "Software security", "Reverse engineering", "Vulnerability research", "Self-hosted software", "Digital ownership", ".NET development", "Video game preservation", "Digital nomad travel"],
-        "nationality": { "@type": "Country", "name": "United States" },
-        "birthPlace": { "@type": "AdministrativeArea", "name": "New Hampshire, United States" },
+        "knowsAbout": [
+          "Adversarial engineering",
+          "Vulnerability research",
+          "Coordinated vulnerability disclosure",
+          "Reverse engineering",
+          "Binary analysis",
+          "Network protocol analysis",
+          "Software security",
+          "Video game preservation",
+          "Software preservation",
+          "C# and .NET development",
+          "BGP anycast networking",
+          "Self-hosted infrastructure",
+          "Cryptocurrency payment processing",
+          "Digital ownership",
+          "Open source software",
+          "Software licensing",
+          "Remote work",
+          "Distributed engineering teams",
+          "Engineering management",
+          "Digital nomadism"
+        ],
+        "nationality": {
+          "@type": "Country",
+          "name": "United States"
+        },
+        "birthPlace": {
+          "@type": "AdministrativeArea",
+          "name": "New Hampshire, United States"
+        },
         "sameAs": [
           "https://github.com/Aeroverra",
           "https://github.com/Aero-VI",
@@ -1156,6 +1243,24 @@
           "https://www.nuget.org/profiles/Aeroverra",
           "https://autobuy.io",
           "https://legend.aeroverra.com"
+        ],
+        "hasOccupation": {
+          "@type": "Occupation",
+          "name": "Lead Software Engineer",
+          "occupationalCategory": "15-1252.00 Software Developers",
+          "responsibilities": "Leads engineering for a distributed team of approximately 35 developers, managing on delivered results rather than hours logged or physical presence, across multiple time zones and with no fixed office.",
+          "skills": "Adversarial engineering, vulnerability research, reverse engineering, binary analysis, network protocol reconstruction, C#, .NET, C, C++, Java, x86 assembly, distributed systems, payment infrastructure, remote team leadership."
+        },
+        "subjectOf": [
+          {
+            "@id": "https://aeroverra.com/nicholas-halka/#remote-work-article"
+          },
+          {
+            "@id": "https://aeroverra.com/nicholas-halka/#open-source-article"
+          },
+          {
+            "@id": "https://aeroverra.com/nicholas-halka/#philosophy-article"
+          }
         ]
       }
     ]
