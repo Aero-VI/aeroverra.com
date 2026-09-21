@@ -16,6 +16,8 @@
   <meta name="twitter:title" content="Aeroverra — Own Your Digital Life" />
   <meta name="twitter:description" content="Aeroverra builds open-source, self-hosted software so you can take back control of your data, your services, and your digital life." />
   <meta name="theme-color" content="#6c63ff" />
+  <link rel="canonical" href="https://aeroverra.com/" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
 
   <style>
     @font-face {
@@ -656,6 +658,7 @@
       <li><a href="#mission">Mission</a></li>
       <li><a href="#team">Team</a></li>
       <li><a href="#opensource">Open Source</a></li>
+      <li><a href="/nicholas-halka/">Founder</a></li>
       <li><a href="#memorial">Memorial</a></li>
       <li><a href="https://github.com/Aero-VI" target="_blank" rel="noopener noreferrer">GitHub</a></li>
     </ul>
@@ -930,6 +933,39 @@
   </section>
 
 
+  <!-- ─── FOUNDER ───────────────────────────────────────────── -->
+  <section id="founder" style="background: var(--bg2); border-top: 1px solid var(--border);">
+    <div class="container">
+      <div class="section-label">Who's behind this</div>
+      <h2>Built by one engineer<br />who refuses to rent his own software.</h2>
+      <div style="display:flex; gap:2rem; align-items:center; flex-wrap:wrap; margin-top:2.5rem;">
+        <img src="assets/img/nicholas-halka.jpg" width="150" height="150" loading="lazy"
+             alt="Nicholas Halka, founder of Aeroverra"
+             style="width:150px; height:150px; border-radius:50%; object-fit:cover; border:2px solid rgba(108,99,255,0.45); flex-shrink:0;" />
+        <div style="flex:1 1 380px;">
+          <h3 style="font-size:1.5rem; font-weight:700; letter-spacing:-0.02em; margin-bottom:0.15rem;">
+            <a href="/nicholas-halka/" style="color:var(--text); text-decoration:none;">Nicholas Halka</a>
+          </h3>
+          <p style="color:var(--accent2); font-size:0.9rem; font-weight:600; margin-bottom:0.9rem;">
+            Adversarial Engineer &middot; Security Researcher &middot; Founder
+          </p>
+          <p style="color:var(--muted); font-size:0.97rem; line-height:1.7;">
+            <strong style="color:var(--text);">Nicholas Halka</strong>, known online as
+            <strong style="color:var(--text);">Aeroverra</strong>, is an American adversarial
+            engineer and security researcher. He founded the digital-goods platform
+            <a href="https://autobuy.io" rel="noopener" style="color:var(--accent2);">AutoBuy</a>
+            in 2019, is credited with a critical zero-click remote code execution disclosure in
+            widely deployed enterprise software, and has worked as a full-time digital nomad from
+            more than 50 countries.
+          </p>
+          <p style="margin-top:1.35rem;">
+            <a href="/nicholas-halka/" class="btn">About Nicholas Halka &rarr;</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ─── NEVER FORGET ───────────────────────────────────────── -->
   <section id="memorial" style="background: var(--bg2); border-top: 1px solid var(--border);">
     <div class="container" style="text-align: center;">
@@ -973,11 +1009,64 @@
     <div class="container">
       <p>© 2026 Aeroverra. All rights reserved.</p>
       <div class="footer-links">
+        <a href="/nicholas-halka/">Nicholas Halka</a>
         <a href="https://github.com/Aero-VI" target="_blank" rel="noopener noreferrer">GitHub</a>
         <a href="mailto:hello@aeroverra.com">Contact</a>
       </div>
     </div>
   </footer>
+
+  <!-- Structured data: ties the Aeroverra brand to Nicholas Halka as a single entity. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://aeroverra.com/#website",
+        "url": "https://aeroverra.com/",
+        "name": "Aeroverra",
+        "description": "Aeroverra builds open-source, self-hosted software so you can take back control of your data, your services, and your digital life.",
+        "inLanguage": "en",
+        "publisher": { "@id": "https://aeroverra.com/#organization" }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://aeroverra.com/#organization",
+        "name": "Aeroverra",
+        "url": "https://aeroverra.com/",
+        "description": "Open-source, self-hosted software project building alternatives to proprietary big-tech products.",
+        "email": "hello@aeroverra.com",
+        "founder": { "@id": "https://aeroverra.com/#nicholas-halka" },
+        "sameAs": ["https://github.com/Aero-VI"]
+      },
+      {
+        "@type": "Person",
+        "@id": "https://aeroverra.com/#nicholas-halka",
+        "name": "Nicholas Halka",
+        "alternateName": ["Aeroverra", "nnickkh", "Nicholas Brian Halka"],
+        "url": "https://aeroverra.com/nicholas-halka/",
+        "mainEntityOfPage": "https://aeroverra.com/nicholas-halka/",
+        "image": "https://aeroverra.com/assets/img/nicholas-halka.jpg",
+        "jobTitle": ["Adversarial Engineer", "Security Researcher", "Lead Software Engineer", "Founder"],
+        "description": "Nicholas Halka, known online as Aeroverra, is an American adversarial engineer, security researcher and software developer. He is the founder of AutoBuy, a digital-goods payment platform operating since 2019, and is credited with a critical zero-click remote code execution disclosure in widely deployed enterprise software.",
+        "nationality": { "@type": "Country", "name": "United States" },
+        "birthPlace": { "@type": "AdministrativeArea", "name": "New Hampshire, United States" },
+        "sameAs": [
+          "https://github.com/Aeroverra",
+          "https://github.com/Aero-VI",
+          "https://www.instagram.com/nnickkh/",
+          "https://x.com/nicholashalka",
+          "https://www.linkedin.com/in/nicholas-halka-283a13126/",
+          "https://www.tiktok.com/@aeroverra",
+          "https://www.nuget.org/profiles/Aeroverra",
+          "https://autobuy.io",
+          "https://legend.aeroverra.com"
+        ]
+      }
+    ]
+  }
+  </script>
 
 </body>
 </html>

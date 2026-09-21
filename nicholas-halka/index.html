@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Nicholas Halka (Aeroverra) — Adversarial Engineer &amp; Security Researcher</title>
+  <meta name="description" content="Nicholas Halka, known online as Aeroverra, is an American adversarial engineer, security researcher and software developer. Founder of the digital-goods platform AutoBuy, credited with a critical zero-click remote code execution disclosure, and a full-time digital nomad across 50+ countries." />
+  <link rel="canonical" href="https://aeroverra.com/nicholas-halka/" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+  <meta name="author" content="Nicholas Halka" />
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%236c63ff'/><text x='16' y='22' font-family='sans-serif' font-size='20' font-weight='700' text-anchor='middle' fill='white'>A</text></svg>" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="profile" />
+  <meta property="og:url" content="https://aeroverra.com/nicholas-halka/" />
+  <meta property="og:site_name" content="Aeroverra" />
+  <meta property="og:title" content="Nicholas Halka (Aeroverra) — Adversarial Engineer &amp; Security Researcher" />
+  <meta property="og:description" content="American adversarial engineer, security researcher and software developer. Founder of AutoBuy. Full-time digital nomad across 50+ countries." />
+  <meta property="og:image" content="https://aeroverra.com/assets/img/nicholas-halka.jpg" />
+  <meta property="og:image:width" content="640" />
+  <meta property="og:image:height" content="640" />
+  <meta property="profile:first_name" content="Nicholas" />
+  <meta property="profile:last_name" content="Halka" />
+  <meta property="profile:username" content="aeroverra" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@NicholasHalka" />
+  <meta name="twitter:creator" content="@NicholasHalka" />
+  <meta name="twitter:title" content="Nicholas Halka (Aeroverra) — Adversarial Engineer &amp; Security Researcher" />
+  <meta name="twitter:description" content="American adversarial engineer, security researcher and software developer. Founder of AutoBuy. Full-time digital nomad across 50+ countries." />
+  <meta name="twitter:image" content="https://aeroverra.com/assets/img/nicholas-halka.jpg" />
+  <meta name="theme-color" content="#6c63ff" />
+
+  <!-- rel=me identity links: these are read by search engines and identity verifiers -->
+  <link rel="me" href="https://github.com/Aeroverra" />
+  <link rel="me" href="https://www.instagram.com/nnickkh/" />
+  <link rel="me" href="https://x.com/nicholashalka" />
+  <link rel="me" href="https://www.linkedin.com/in/nicholas-halka-283a13126/" />
+  <link rel="me" href="https://www.tiktok.com/@aeroverra" />
+  <link rel="me" href="https://www.nuget.org/profiles/Aeroverra" />
+
+  <style>
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 100 900;
+      font-display: swap;
+      src: url(../assets/fonts/inter-latin-ext.woff2) format('woff2');
+      unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 100 900;
+      font-display: swap;
+      src: url(../assets/fonts/inter-latin.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:      #08080f;
+      --bg2:     #0f0f1a;
+      --bg3:     #15151f;
+      --border:  rgba(255,255,255,0.07);
+      --text:    #e8e8f0;
+      --muted:   #7a7a9a;
+      --accent:  #6c63ff;
+      --accent2: #a78bfa;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: var(--accent2); }
+    a:hover { color: var(--text); }
+
+    /* ─── NAV ─────────────────────────────────────────────── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1.25rem 2rem;
+      background: rgba(8,8,15,0.88);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+    .logo { font-size: 1.15rem; font-weight: 700; letter-spacing: -0.02em; color: var(--text); text-decoration: none; }
+    .logo span { color: var(--accent2); }
+    .nav-links { list-style: none; display: flex; gap: 1.75rem; align-items: center; }
+    .nav-links a { color: var(--muted); text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--text); }
+
+    .container { max-width: 860px; margin: 0 auto; padding: 0 1.5rem; }
+    main { padding-top: 7rem; padding-bottom: 4rem; }
+
+    /* ─── BREADCRUMB ──────────────────────────────────────── */
+    .crumbs { font-size: 0.82rem; color: var(--muted); margin-bottom: 2rem; }
+    .crumbs a { color: var(--muted); text-decoration: none; }
+    .crumbs a:hover { color: var(--text); }
+
+    /* ─── HEADER ──────────────────────────────────────────── */
+    .profile-head {
+      display: flex; gap: 2rem; align-items: center; flex-wrap: wrap;
+      padding-bottom: 2.25rem; margin-bottom: 2.25rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .profile-head img {
+      width: 132px; height: 132px; border-radius: 50%;
+      object-fit: cover; border: 2px solid rgba(108,99,255,0.45);
+      flex-shrink: 0;
+    }
+    .profile-head .who { flex: 1 1 380px; }
+    h1 { font-size: clamp(2.1rem, 6vw, 3rem); font-weight: 800; letter-spacing: -0.035em; line-height: 1.08; }
+    .aka { color: var(--muted); font-size: 1rem; margin-top: 0.35rem; }
+    .aka strong { color: var(--accent2); font-weight: 600; }
+    .roles { margin-top: 0.85rem; display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .pill {
+      font-size: 0.76rem; font-weight: 600; letter-spacing: 0.02em;
+      background: rgba(108,99,255,0.12); border: 1px solid rgba(108,99,255,0.3);
+      color: var(--accent2); padding: 0.25rem 0.7rem; border-radius: 999px;
+    }
+
+    /* ─── LEDE ────────────────────────────────────────────── */
+    .lede { font-size: 1.14rem; line-height: 1.72; color: #d5d5e4; }
+    .lede + .lede { margin-top: 1.1rem; }
+
+    /* ─── FACTS ───────────────────────────────────────────── */
+    .facts {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 1px; background: var(--border);
+      border: 1px solid var(--border); border-radius: 12px; overflow: hidden;
+      margin: 2.5rem 0;
+    }
+    .fact { background: var(--bg2); padding: 1.05rem 1.15rem; }
+    .fact dt { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.09em; color: var(--muted); font-weight: 700; }
+    .fact dd { font-size: 0.94rem; margin-top: 0.25rem; color: var(--text); }
+
+    /* ─── SECTIONS ────────────────────────────────────────── */
+    section { margin-top: 3rem; }
+    h2 {
+      font-size: 1.42rem; font-weight: 700; letter-spacing: -0.02em;
+      margin-bottom: 0.9rem; padding-bottom: 0.55rem;
+      border-bottom: 1px solid var(--border);
+    }
+    h3 { font-size: 1.02rem; font-weight: 700; margin-top: 1.5rem; margin-bottom: 0.35rem; color: var(--accent2); }
+    p + p { margin-top: 0.85rem; }
+    section p { color: #c9c9dc; }
+    ul { margin: 0.7rem 0 0 1.15rem; color: #c9c9dc; }
+    li { margin-bottom: 0.45rem; }
+
+    .callout {
+      background: var(--bg2); border: 1px solid var(--border);
+      border-left: 3px solid var(--accent); border-radius: 0 10px 10px 0;
+      padding: 1.1rem 1.25rem; margin-top: 1.25rem;
+    }
+    .callout p { margin: 0; font-size: 0.94rem; }
+
+    /* ─── FAQ ─────────────────────────────────────────────── */
+    .faq-item { border-bottom: 1px solid var(--border); padding: 1.15rem 0; }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-item h3 { margin: 0 0 0.4rem 0; color: var(--text); font-size: 1rem; }
+    .faq-item p { margin: 0; font-size: 0.95rem; }
+
+    /* ─── LINKS GRID ──────────────────────────────────────── */
+    .links { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 0.75rem; margin-top: 1.25rem; }
+    .link-card {
+      display: block; background: var(--bg2); border: 1px solid var(--border);
+      border-radius: 10px; padding: 0.9rem 1.05rem; text-decoration: none;
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .link-card:hover { border-color: rgba(108,99,255,0.45); background: var(--bg3); }
+    .link-card strong { display: block; color: var(--text); font-size: 0.93rem; }
+    .link-card span { display: block; color: var(--muted); font-size: 0.8rem; margin-top: 0.1rem; }
+
+    /* ─── FOOTER ──────────────────────────────────────────── */
+    footer {
+      border-top: 1px solid var(--border); margin-top: 4rem;
+      padding: 2rem 1.5rem; text-align: center; color: var(--muted); font-size: 0.85rem;
+    }
+    footer a { color: var(--muted); text-decoration: none; margin: 0 0.6rem; }
+    footer a:hover { color: var(--text); }
+    .updated { font-size: 0.78rem; color: #55556e; margin-top: 2.5rem; }
+
+    @media (max-width: 640px) {
+      nav { padding: 1rem 1.25rem; }
+      .nav-links { gap: 1rem; }
+      .nav-links a { font-size: 0.82rem; }
+      .profile-head { gap: 1.25rem; }
+      .profile-head img { width: 96px; height: 96px; }
+      main { padding-top: 6rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav aria-label="Primary navigation">
+    <a href="/" class="logo">Aero<span>verra</span></a>
+    <ul class="nav-links">
+      <li><a href="/#mission">Mission</a></li>
+      <li><a href="/#opensource">Open Source</a></li>
+      <li><a href="https://github.com/Aero-VI" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="container">
+
+      <p class="crumbs"><a href="/">Aeroverra</a> &rsaquo; <span>Nicholas Halka</span></p>
+
+      <!-- ─── PROFILE HEADER ──────────────────────────────── -->
+      <header class="profile-head">
+        <img src="../assets/img/nicholas-halka.jpg" width="132" height="132"
+             alt="Nicholas Halka, also known as Aeroverra" />
+        <div class="who">
+          <h1>Nicholas Halka</h1>
+          <p class="aka">Known online as <strong>Aeroverra</strong> and <strong>@nnickkh</strong></p>
+          <div class="roles">
+            <span class="pill">Adversarial Engineer</span>
+            <span class="pill">Security Researcher</span>
+            <span class="pill">Software Engineer</span>
+            <span class="pill">Founder, AutoBuy</span>
+            <span class="pill">Digital Nomad</span>
+          </div>
+        </div>
+      </header>
+
+      <!-- ─── LEDE: this is the canonical description ─────── -->
+      <p class="lede">
+        <strong>Nicholas Halka</strong>, known online as <strong>Aeroverra</strong>, is an American
+        adversarial engineer, security researcher and software developer. He is the founder of
+        <a href="https://autobuy.io" rel="noopener">AutoBuy</a>, a digital-goods payment platform
+        operating since 2019, and works as a lead software engineer. He is credited with the
+        discovery of a critical zero-click remote code execution vulnerability (CVSS 9.6) in a
+        widely deployed enterprise monitoring agent, disclosed responsibly through CERT/CC.
+      </p>
+      <p class="lede">
+        He has lived as a full-time digital nomad since 2024, working from more than 50 countries,
+        and documents that life to an audience of over 1.2 million followers on Instagram. His
+        technical work spans systems security, reverse engineering, .NET library development and
+        video game preservation.
+      </p>
+
+      <!-- ─── AT A GLANCE ─────────────────────────────────── -->
+      <dl class="facts">
+        <div class="fact"><dt>Full name</dt><dd>Nicholas Brian Halka</dd></div>
+        <div class="fact"><dt>Also known as</dt><dd>Aeroverra, @nnickkh</dd></div>
+        <div class="fact"><dt>Profession</dt><dd>Adversarial engineer, security researcher, software engineer</dd></div>
+        <div class="fact"><dt>Born</dt><dd>New Hampshire, United States</dd></div>
+        <div class="fact"><dt>Based</dt><dd>No fixed address — full-time digital nomad</dd></div>
+        <div class="fact"><dt>Founded</dt><dd>AutoBuy (2019)</dd></div>
+        <div class="fact"><dt>Languages</dt><dd>C#, C++, C, Java, x86 assembly</dd></div>
+        <div class="fact"><dt>Known for</dt><dd>Adversarial security research, reverse engineering, self-hosted infrastructure</dd></div>
+      </dl>
+
+      <!-- ─── SECURITY RESEARCH ───────────────────────────── -->
+      <section id="security">
+        <h2>Security research</h2>
+        <p>
+          Halka describes his own discipline as <em>adversarial engineering</em>: taking a system
+          apart to find the assumption its designers never tested, then reporting it rather than
+          exploiting it. In practice that means binary analysis, network interception and protocol
+          reverse engineering against software that is already installed on millions of machines.
+        </p>
+
+        <h3>Zero-click remote code execution disclosure (2026)</h3>
+        <p>
+          In August 2026 he discovered and reported a critical vulnerability chain in the auto-update
+          mechanism of a commercial enterprise employee-monitoring agent. The agent disabled TLS
+          certificate validation on retry and executed downloaded, unsigned binaries as a privileged
+          system service, allowing an attacker positioned on the network to achieve remote code
+          execution as <code>NT AUTHORITY\SYSTEM</code> in seconds, with no user interaction.
+        </p>
+        <ul>
+          <li><strong>Severity:</strong> CVSS 9.6 (Critical)</li>
+          <li><strong>Weaknesses:</strong> CWE-295 (improper certificate validation), CWE-494 (download of code without integrity check)</li>
+          <li><strong>Reported through:</strong> CERT/CC coordinated disclosure, August 2026</li>
+          <li><strong>Outcome:</strong> Confirmed by the vendor, bug bounty awarded, researcher credited by name</li>
+        </ul>
+        <p>
+          The proof of concept was built on his own hardware: a custom OpenWrt router running a
+          transparent TLS interception proxy written from scratch in Go. The vendor described the
+          submission as one of the most complete reports received through their disclosure program.
+        </p>
+        <div class="callout">
+          <p>
+            <strong>Disclosure ethic:</strong> all research is conducted on personally owned
+            infrastructure and reported to the vendor through a coordinated channel before any
+            public discussion. Proofs of concept are deliberately benign.
+          </p>
+        </div>
+        <!--
+          EDITOR NOTE: the vendor (ActivTrak / Birch Grove Software) is intentionally unnamed until
+          the patch ships and the public advisory + Hall of Fame entry go live. When that happens,
+          replace "a commercial enterprise employee-monitoring agent" above with the vendor name and
+          add the advisory URL to the "citation" array in the JSON-LD block below.
+        -->
+      </section>
+
+      <!-- ─── SOFTWARE ────────────────────────────────────── -->
+      <section id="software">
+        <h2>Software engineering</h2>
+        <p>
+          Halka has worked as a professional software engineer since the mid-2010s and currently
+          serves as a lead engineer, directing a development organisation of roughly 35 people. His
+          public work is primarily in the .NET ecosystem.
+        </p>
+        <h3>Open source and published packages</h3>
+        <p>
+          He publishes libraries to NuGet under the <code>Aeroverra</code> namespace, covering
+          payment integration, real-time transport, code generation and hardening tooling for
+          air-gapped and zero-trust deployments. His GitHub account has been active since 2013 and
+          hosts dozens of public repositories, with further work under the
+          <a href="https://github.com/Aero-VI" rel="noopener">Aero-VI</a> organisation.
+        </p>
+        <h3>Self-hosted infrastructure</h3>
+        <p>
+          Halka operates his own autonomous system number and IP allocation, announcing a single
+          prefix by BGP from points of presence on multiple continents to run a personally built
+          anycast content delivery network. He also maintains a multi-chain cryptocurrency node
+          stack that settles payments for AutoBuy without a third-party processor.
+        </p>
+      </section>
+
+      <!-- ─── AUTOBUY ─────────────────────────────────────── -->
+      <section id="autobuy">
+        <h2>AutoBuy</h2>
+        <p>
+          <a href="https://autobuy.io" rel="noopener">AutoBuy</a> is an all-in-one payment
+          processing and storefront platform for digital goods, founded by Halka in 2019. Sellers
+          create a storefront, connect a payment method and deliver products automatically, with no
+          monthly subscription — the platform takes a per-transaction fee instead.
+        </p>
+        <ul>
+          <li>2,000+ registered users</li>
+          <li>1,000+ shops actively trading on the platform</li>
+          <li>10,000+ products delivered since 2019</li>
+          <li>PayPal partnered, with a public API and a built-in software licensing system</li>
+        </ul>
+        <p>
+          AutoBuy enforces a strict acceptable-use policy and prohibits fraudulent payment activity,
+          a position Halka has publicly credited for the platform's longevity in a category where
+          competitors have repeatedly been seized or shut down.
+        </p>
+      </section>
+
+      <!-- ─── REVERSE ENGINEERING ─────────────────────────── -->
+      <section id="preservation">
+        <h2>Reverse engineering and game preservation</h2>
+        <p>
+          A long-running thread in Halka's work is the recovery of software that its owners no
+          longer distribute. He has published decompilation and deobfuscation tooling for early
+          Java game clients, along with detailed reconstructions of their network protocols, and
+          those tools are used by volunteer archival groups working to keep two-decade-old builds
+          runnable.
+        </p>
+        <p>
+          He frames the motivation plainly in his own words: he builds things "to make knowledge
+          restricted by moral gatekeepers accessible." Alongside the preservation work he collects
+          and archives original console hardware, including development kits that were never sold
+          to the public.
+        </p>
+      </section>
+
+      <!-- ─── NOMAD ───────────────────────────────────────── -->
+      <section id="travel">
+        <h2>Travel and public presence</h2>
+        <p>
+          Since 2024 Halka has worked entirely on the road, with no fixed residence. He has visited
+          more than 50 countries in roughly two years, frequently working from ocean crossings and
+          long-haul sailings, and has completed multiple transatlantic voyages while shipping code.
+        </p>
+        <p>
+          He documents this on Instagram as
+          <a href="https://www.instagram.com/nnickkh/" rel="noopener">@nnickkh</a>, a verified
+          account with an audience of over 1.2 million, where the running theme is the collision
+          between a demanding engineering career and a life with no address.
+        </p>
+      </section>
+
+      <!-- ─── FAQ ─────────────────────────────────────────── -->
+      <section id="faq">
+        <h2>Frequently asked</h2>
+
+        <div class="faq-item">
+          <h3>Who is Nicholas Halka?</h3>
+          <p>
+            Nicholas Halka, known online as Aeroverra, is an American adversarial engineer, security
+            researcher and software developer. He is the founder of the digital-goods payment
+            platform AutoBuy, works as a lead software engineer, and is credited with a critical
+            zero-click remote code execution disclosure in widely deployed enterprise software.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>What is an adversarial engineer?</h3>
+          <p>
+            It is the term Halka uses for his own work: engineering approached from the attacker's
+            side. Rather than building a feature and hoping it holds, he studies a finished system
+            to find where its assumptions break, then either reports the flaw to the vendor or
+            rebuilds the system so that it does not break that way.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Where is Nicholas Halka based?</h3>
+          <p>
+            Nowhere fixed. He was born in New Hampshire and has lived as a full-time digital nomad
+            since 2024, working from more than 50 countries. Older directory listings that place him
+            in Austin, Texas are out of date.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>What is Aeroverra?</h3>
+          <p>
+            Aeroverra is both Halka's long-standing online handle and the name of the software
+            project he runs under it, which builds open-source, self-hosted alternatives to
+            proprietary software. Source code is published under the Aero-VI organisation on GitHub.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>What is Nicholas Halka known for?</h3>
+          <p>
+            Adversarial security research, including a CVSS 9.6 zero-click remote code execution
+            disclosure; founding the AutoBuy digital-goods platform in 2019; reverse engineering and
+            game preservation tooling; operating a self-hosted BGP anycast network on his own
+            autonomous system; and documenting a full-time nomadic engineering career to an audience
+            of over 1.2 million.
+          </p>
+        </div>
+      </section>
+
+      <!-- ─── ELSEWHERE ───────────────────────────────────── -->
+      <section id="elsewhere">
+        <h2>Elsewhere on the web</h2>
+        <p>These are the authoritative, first-party accounts. Anything not listed here is not him.</p>
+        <div class="links">
+          <a class="link-card" rel="me noopener" href="https://github.com/Aeroverra">
+            <strong>GitHub — @Aeroverra</strong><span>Personal code, active since 2013</span></a>
+          <a class="link-card" rel="noopener" href="https://github.com/Aero-VI">
+            <strong>GitHub — Aero-VI</strong><span>Open-source organisation</span></a>
+          <a class="link-card" rel="me noopener" href="https://www.instagram.com/nnickkh/">
+            <strong>Instagram — @nnickkh</strong><span>Verified · travel and engineering</span></a>
+          <a class="link-card" rel="me noopener" href="https://x.com/nicholashalka">
+            <strong>X — @NicholasHalka</strong><span>Software artist, security explorer</span></a>
+          <a class="link-card" rel="me noopener" href="https://www.linkedin.com/in/nicholas-halka-283a13126/">
+            <strong>LinkedIn</strong><span>Professional history</span></a>
+          <a class="link-card" rel="me noopener" href="https://www.nuget.org/profiles/Aeroverra">
+            <strong>NuGet — Aeroverra</strong><span>Published .NET packages</span></a>
+          <a class="link-card" rel="me noopener" href="https://www.tiktok.com/@aeroverra">
+            <strong>TikTok — @aeroverra</strong><span>Short-form video</span></a>
+          <a class="link-card" rel="noopener" href="https://autobuy.io">
+            <strong>AutoBuy</strong><span>Digital-goods platform he founded</span></a>
+        </div>
+      </section>
+
+      <p class="updated">Last reviewed 21 September 2026. Maintained by Aeroverra.</p>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Aeroverra. All rights reserved.</p>
+      <p style="margin-top:0.6rem;">
+        <a href="/">Home</a>
+        <a href="https://github.com/Aero-VI" rel="noopener">GitHub</a>
+        <a href="mailto:hello@aeroverra.com">Contact</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════════════════════════
+       STRUCTURED DATA
+       ProfilePage → Person is the strongest signal available for
+       entity reconciliation in a Knowledge Graph. sameAs does the
+       identity-merging work; FAQPage feeds generative answers.
+       ══════════════════════════════════════════════════════ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ProfilePage",
+        "@id": "https://aeroverra.com/nicholas-halka/#page",
+        "url": "https://aeroverra.com/nicholas-halka/",
+        "name": "Nicholas Halka (Aeroverra) — Adversarial Engineer & Security Researcher",
+        "inLanguage": "en",
+        "dateModified": "2026-09-21",
+        "isPartOf": { "@id": "https://aeroverra.com/#website" },
+        "mainEntity": { "@id": "https://aeroverra.com/#nicholas-halka" },
+        "about": { "@id": "https://aeroverra.com/#nicholas-halka" },
+        "primaryImageOfPage": { "@id": "https://aeroverra.com/nicholas-halka/#photo" },
+        "breadcrumb": { "@id": "https://aeroverra.com/nicholas-halka/#breadcrumb" }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://aeroverra.com/nicholas-halka/#breadcrumb",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Aeroverra", "item": "https://aeroverra.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Nicholas Halka" }
+        ]
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "https://aeroverra.com/nicholas-halka/#photo",
+        "url": "https://aeroverra.com/assets/img/nicholas-halka.jpg",
+        "contentUrl": "https://aeroverra.com/assets/img/nicholas-halka.jpg",
+        "width": 640,
+        "height": 640,
+        "caption": "Nicholas Halka, also known as Aeroverra"
+      },
+      {
+        "@type": "Person",
+        "@id": "https://aeroverra.com/#nicholas-halka",
+        "name": "Nicholas Halka",
+        "givenName": "Nicholas",
+        "additionalName": "Brian",
+        "familyName": "Halka",
+        "alternateName": ["Aeroverra", "nnickkh", "Nicholas Brian Halka"],
+        "disambiguatingDescription": "American adversarial engineer and security researcher; founder of the digital-goods platform AutoBuy; known online as Aeroverra.",
+        "description": "Nicholas Halka, known online as Aeroverra, is an American adversarial engineer, security researcher and software developer. He is the founder of AutoBuy, a digital-goods payment platform operating since 2019, and works as a lead software engineer. He is credited with the discovery of a critical zero-click remote code execution vulnerability (CVSS 9.6) in a widely deployed enterprise monitoring agent, disclosed responsibly through CERT/CC. He has lived as a full-time digital nomad since 2024, working from more than 50 countries.",
+        "url": "https://aeroverra.com/nicholas-halka/",
+        "mainEntityOfPage": { "@id": "https://aeroverra.com/nicholas-halka/#page" },
+        "image": { "@id": "https://aeroverra.com/nicholas-halka/#photo" },
+        "jobTitle": ["Adversarial Engineer", "Security Researcher", "Lead Software Engineer", "Founder"],
+        "nationality": { "@type": "Country", "name": "United States" },
+        "birthPlace": { "@type": "AdministrativeArea", "name": "New Hampshire, United States" },
+        "knowsAbout": [
+          "Adversarial engineering",
+          "Vulnerability research",
+          "Coordinated vulnerability disclosure",
+          "Reverse engineering",
+          "Binary analysis",
+          "Network protocol analysis",
+          "Video game preservation",
+          "C# and .NET development",
+          "BGP anycast networking",
+          "Self-hosted infrastructure",
+          "Cryptocurrency payment processing",
+          "Digital nomadism"
+        ],
+        "knowsLanguage": "en",
+        "worksFor": { "@id": "https://autobuy.io/#organization" },
+        "founder": { "@id": "https://autobuy.io/#organization" },
+        "affiliation": { "@id": "https://aeroverra.com/#organization" },
+        "award": [
+          "Security bug bounty for a CVSS 9.6 zero-click remote code execution disclosure (2026)"
+        ],
+        "sameAs": [
+          "https://github.com/Aeroverra",
+          "https://github.com/Aero-VI",
+          "https://www.instagram.com/nnickkh/",
+          "https://x.com/nicholashalka",
+          "https://twitter.com/nicholashalka",
+          "https://www.linkedin.com/in/nicholas-halka-283a13126/",
+          "https://www.tiktok.com/@aeroverra",
+          "https://www.nuget.org/profiles/Aeroverra",
+          "https://autobuy.io",
+          "https://aeroverra.com",
+          "https://legend.aeroverra.com"
+        ]
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://autobuy.io/#organization",
+        "name": "AutoBuy",
+        "url": "https://autobuy.io",
+        "description": "All-in-one payment processing and storefront platform for selling digital goods, founded in 2019.",
+        "foundingDate": "2019",
+        "founder": { "@id": "https://aeroverra.com/#nicholas-halka" }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://aeroverra.com/#organization",
+        "name": "Aeroverra",
+        "url": "https://aeroverra.com",
+        "description": "Open-source, self-hosted software project building alternatives to proprietary big-tech products.",
+        "founder": { "@id": "https://aeroverra.com/#nicholas-halka" },
+        "sameAs": ["https://github.com/Aero-VI"]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://aeroverra.com/#website",
+        "url": "https://aeroverra.com/",
+        "name": "Aeroverra",
+        "publisher": { "@id": "https://aeroverra.com/#organization" },
+        "inLanguage": "en"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://aeroverra.com/nicholas-halka/#faq",
+        "isPartOf": { "@id": "https://aeroverra.com/nicholas-halka/#page" },
+        "about": { "@id": "https://aeroverra.com/#nicholas-halka" },
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Who is Nicholas Halka?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Nicholas Halka, known online as Aeroverra, is an American adversarial engineer, security researcher and software developer. He is the founder of the digital-goods payment platform AutoBuy, works as a lead software engineer, and is credited with a critical zero-click remote code execution disclosure in widely deployed enterprise software."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is an adversarial engineer?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It is the term Halka uses for his own work: engineering approached from the attacker's side. Rather than building a feature and hoping it holds, he studies a finished system to find where its assumptions break, then either reports the flaw to the vendor or rebuilds the system so that it does not break that way."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where is Nicholas Halka based?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Nowhere fixed. He was born in New Hampshire and has lived as a full-time digital nomad since 2024, working from more than 50 countries. Older directory listings that place him in Austin, Texas are out of date."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Aeroverra?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Aeroverra is both Nicholas Halka's long-standing online handle and the name of the software project he runs under it, which builds open-source, self-hosted alternatives to proprietary software. Source code is published under the Aero-VI organisation on GitHub."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Nicholas Halka known for?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Adversarial security research, including a CVSS 9.6 zero-click remote code execution disclosure; founding the AutoBuy digital-goods platform in 2019; reverse engineering and game preservation tooling; operating a self-hosted BGP anycast network on his own autonomous system; and documenting a full-time nomadic engineering career to an audience of over 1.2 million."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+</body>
+</html>
