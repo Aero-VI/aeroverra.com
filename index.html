@@ -643,6 +643,42 @@
       .oss-principles { grid-template-columns: 1fr; }
       footer .container { flex-direction: column; align-items: flex-start; gap: 0.75rem; }
     }
+  
+    /* ─── founder: first-party link grid ─────────────────────── */
+    .me-links {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(215px, 1fr));
+      gap: 0.7rem;
+      margin-top: 1.1rem;
+    }
+    .me-link {
+      display: block;
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      border-radius: 9px;
+      padding: 0.8rem 0.95rem;
+      text-decoration: none;
+      transition: border-color 0.18s ease, transform 0.18s ease;
+    }
+    .me-link:hover { border-color: var(--line); transform: translateY(-2px); }
+    .me-link strong {
+      display: block;
+      color: var(--text);
+      font-size: 0.88rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+    }
+    .me-link span {
+      display: block;
+      color: var(--muted);
+      font-size: 0.76rem;
+      margin-top: 0.15rem;
+      line-height: 1.45;
+    }
+    .founder-body p { color: var(--muted); font-size: 0.97rem; line-height: 1.75; }
+    .founder-body p + p { margin-top: 0.95rem; }
+    .founder-body p.canon { color: var(--text); font-size: 1.04rem; line-height: 1.8; }
+    .founder-body a { color: var(--accent2); }
   </style>
 </head>
 <body>
@@ -938,28 +974,85 @@
     <div class="container">
       <div class="section-label">Who's behind this</div>
       <h2>Built by one engineer<br />who refuses to rent his own software.</h2>
-      <div style="display:flex; gap:2rem; align-items:center; flex-wrap:wrap; margin-top:2.5rem;">
+
+      <div style="display:flex; gap:2.25rem; align-items:flex-start; flex-wrap:wrap; margin-top:2.5rem;">
         <img src="assets/img/nicholas-halka.jpg" width="150" height="150" loading="lazy"
-             alt="Nicholas Halka, founder of Aeroverra"
+             alt="Nicholas Halka, known online as Aeroverra"
              style="width:150px; height:150px; border-radius:50%; object-fit:cover; border:2px solid rgba(108,99,255,0.45); flex-shrink:0;" />
-        <div style="flex:1 1 380px;">
-          <h3 style="font-size:1.5rem; font-weight:700; letter-spacing:-0.02em; margin-bottom:0.15rem;">
+
+        <div class="founder-body" style="flex:1 1 420px; min-width:0;">
+          <h3 style="font-size:1.55rem; font-weight:700; letter-spacing:-0.02em; margin-bottom:0.15rem;">
             <a href="/nicholas-halka/" style="color:var(--text); text-decoration:none;">Nicholas Halka</a>
           </h3>
-          <p style="color:var(--accent2); font-size:0.9rem; font-weight:600; margin-bottom:0.9rem;">
-            Adversarial Engineer &middot; Security Researcher &middot; Founder
+          <p style="color:var(--accent2); font-size:0.9rem; font-weight:600; margin-bottom:1.1rem;">
+            Adversarial Engineer &middot; Security Researcher &middot; Founder of AutoBuy &middot; Digital Nomad
           </p>
-          <p style="color:var(--muted); font-size:0.97rem; line-height:1.7;">
+
+          <!-- CANONICAL DESCRIPTION — keep byte-identical with the Google profile,
+               LinkedIn About, GitHub README and the Person schema below. -->
+          <p class="canon">
             <strong style="color:var(--text);">Nicholas Halka</strong>, known online as
-            <strong style="color:var(--text);">Aeroverra</strong>, is an American adversarial
-            engineer and security researcher. He founded the digital-goods platform
-            <a href="https://autobuy.io" rel="noopener" style="color:var(--accent2);">AutoBuy</a>
-            in 2019, is credited with a critical zero-click remote code execution disclosure in
-            widely deployed enterprise software, and has worked as a full-time digital nomad from
-            more than 50 countries.
+            <strong style="color:var(--text);">Aeroverra</strong>, is an American technologist and
+            digital nomad recognized for bridging the gap between software engineering and
+            cybersecurity. His core background in programming and system design has enabled him to
+            identify multiple critical security vulnerabilities in commercial platforms. He is
+            notable for his global travel lifestyle, his work on digital ownership tools, and
+            founding the platform <a href="https://autobuy.io" rel="noopener">AutoBuy</a>.
           </p>
-          <p style="margin-top:1.35rem;">
-            <a href="/nicholas-halka/" class="btn">About Nicholas Halka &rarr;</a>
+
+          <p>
+            Halka calls the discipline <em>adversarial engineering</em>: taking a shipped system
+            apart to find what its vendor built by accident. That work is credited with a critical
+            <strong style="color:var(--text);">zero-click remote code execution vulnerability</strong>
+            (CVSS 9.6) in a widely deployed enterprise monitoring agent, disclosed responsibly
+            through CERT/CC. He has been writing software since childhood and working in
+            C#, C++, C, Java and x86 assembly for most of that time.
+          </p>
+
+          <p>
+            Professionally he leads engineering for a team of roughly 35 developers. Independently
+            he founded <a href="https://autobuy.io" rel="noopener">AutoBuy</a> in 2019, a
+            digital-goods platform built around self-custody payments and genuine ownership of what
+            you buy, and he builds the reverse-engineering and decompilation tooling that game
+            preservation communities use to keep two-decade-old clients running. Everything under
+            the <a href="https://github.com/Aero-VI" rel="noopener">Aeroverra</a> name follows the
+            same rule: open source, self-hosted, no subscription, no landlord.
+          </p>
+
+          <p>
+            He has lived without a fixed address since 2024 and has worked from more than
+            <strong style="color:var(--text);">50 countries</strong>, including two transatlantic
+            crossings in 2026, and documents that life to an audience of over
+            <strong style="color:var(--text);">1.2&nbsp;million</strong> on Instagram.
+          </p>
+
+          <h4 style="margin-top:2rem; font-size:0.78rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:var(--muted);">
+            First-party accounts
+          </h4>
+          <p style="font-size:0.85rem; margin-top:0.45rem;">
+            These are the authoritative accounts. Anything not listed here is not him.
+          </p>
+          <div class="me-links">
+            <a class="me-link" rel="me noopener" href="https://www.instagram.com/nnickkh/">
+              <strong>Instagram &mdash; @nnickkh</strong><span>Verified &middot; travel and engineering</span></a>
+            <a class="me-link" rel="me noopener" href="https://www.linkedin.com/in/nicholas-halka-283a13126/">
+              <strong>LinkedIn</strong><span>Professional history</span></a>
+            <a class="me-link" rel="me noopener" href="https://github.com/Aeroverra">
+              <strong>GitHub &mdash; @Aeroverra</strong><span>Personal code, active since 2013</span></a>
+            <a class="me-link" rel="noopener" href="https://github.com/Aero-VI">
+              <strong>GitHub &mdash; Aero-VI</strong><span>Open-source organisation</span></a>
+            <a class="me-link" rel="me noopener" href="https://x.com/nicholashalka">
+              <strong>X &mdash; @NicholasHalka</strong><span>Software artist, security explorer</span></a>
+            <a class="me-link" rel="noopener" href="https://autobuy.io">
+              <strong>AutoBuy</strong><span>Digital-goods platform, founded 2019</span></a>
+            <a class="me-link" rel="me noopener" href="https://www.nuget.org/profiles/Aeroverra">
+              <strong>NuGet &mdash; Aeroverra</strong><span>Published .NET packages</span></a>
+            <a class="me-link" rel="me noopener" href="https://www.tiktok.com/@aeroverra">
+              <strong>TikTok &mdash; @aeroverra</strong><span>Short-form video</span></a>
+          </div>
+
+          <p style="margin-top:1.75rem;">
+            <a href="/nicholas-halka/" class="btn">Full profile: about Nicholas Halka &rarr;</a>
           </p>
         </div>
       </div>
@@ -1049,7 +1142,8 @@
         "mainEntityOfPage": "https://aeroverra.com/nicholas-halka/",
         "image": "https://aeroverra.com/assets/img/nicholas-halka.jpg",
         "jobTitle": ["Adversarial Engineer", "Security Researcher", "Lead Software Engineer", "Founder"],
-        "description": "Nicholas Halka, known online as Aeroverra, is an American adversarial engineer, security researcher and software developer. He is the founder of AutoBuy, a digital-goods payment platform operating since 2019, and is credited with a critical zero-click remote code execution disclosure in widely deployed enterprise software.",
+        "description": "Nicholas Halka, known online as Aeroverra, is an American technologist and digital nomad recognized for bridging the gap between software engineering and cybersecurity. His core background in programming and system design has enabled him to identify multiple critical security vulnerabilities in commercial platforms. He is notable for his global travel lifestyle, his work on digital ownership tools, and founding the platform AutoBuy.",
+        "knowsAbout": ["Adversarial engineering", "Software security", "Reverse engineering", "Vulnerability research", "Self-hosted software", "Digital ownership", ".NET development", "Video game preservation", "Digital nomad travel"],
         "nationality": { "@type": "Country", "name": "United States" },
         "birthPlace": { "@type": "AdministrativeArea", "name": "New Hampshire, United States" },
         "sameAs": [
